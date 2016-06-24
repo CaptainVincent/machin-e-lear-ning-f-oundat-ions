@@ -4,6 +4,6 @@
 
 這邊介紹一種簡單的 Hypothesis Set 的定義方式稱 **Perceptron** 來求一個是非題的解, 數學上的符號如下
 
-Hypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>1</sub>}
+Hypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>∞</sub>}
 
 Σ <sub>(i=1~n)</sub> w<sub>i</sub>x<sub>i</sub> (再定義出一個 threshold 來二分這是非題的結果, y = {+1 , -1})
