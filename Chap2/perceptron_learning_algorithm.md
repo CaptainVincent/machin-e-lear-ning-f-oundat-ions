@@ -1,4 +1,4 @@
-
+0
 ## Perceptron Learning Algorith## Perceptron Learning Algorithm
 在開始用數學工具幫助我們理解為何可以學習前, 這裡先介紹一種簡單的機器學習演算法, 並在後續透過這個例子來加入數學工具分析 Machine Learning 的限制。
 
@@ -33,6 +33,8 @@ Let, **w**<sub>t+1</sub> = **w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</
 
 Until no more mistakes.
 
-![](2DPLA.jpg)
+<img src="2DPLA.jpg" width="237" height="218"/>
 
 (以二維(2D)的 input 為例做想像)
+
+> sign (**w**<sup>T</sup>**x**) 中, **w**<sup>T</sup>**x** = 0 在二維中是一條法相量為 **w**<sup>T</sup> 的直線二分其結果 y, 在高維度時則是劃分結果 y 的則是法相量 **w**<sup>T</sup> 的高維平面。
