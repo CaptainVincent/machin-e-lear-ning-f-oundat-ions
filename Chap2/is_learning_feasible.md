@@ -15,7 +15,7 @@ P [|ν - μ| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N), ɛ 為誤差範圍、N 為取�
 
 P [|E<sub>in</sub>(h) - E<sub>out</sub>(h)| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N)
 
-所以當取樣夠多時
+所以當取樣 (N) 夠多時
 
 * E<sub>in</sub>(h) ≈ E<sub>out</sub>(h)
 * 又當 E<sub>in</sub>(h) 夠小時, g = f is PAC (**P**robably **A**pproximately **C**orrect)
