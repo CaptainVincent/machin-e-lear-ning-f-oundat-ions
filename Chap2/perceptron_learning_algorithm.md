@@ -92,7 +92,7 @@ cosθ &\geq \frac{w_f^Tw_T}{||w_f||||w_T||} &\geq \frac{T\cdot min\ y_nw_f^Tx_n}
 \end{split}    
 \end{equation}
 </div>
-> 最後可以求出 cos θ 經過 T 次迭代後成正比的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時, PLA 確實可修正 **W**<sub>t</sub> 使其更加靠近 **W**<sub>f</sub> 並中止。
+> 最後可以求出 cos θ 經過 T 次迭代後的開根號成正比的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時, PLA 確實可修正 **W**<sub>t</sub> 使其更加靠近 **W**<sub>f</sub> 並中止。
 
 得到以上的結果後, 對於 PLA 還是存在一些疑問, 包括了如何知道資料是線性可分 (**W**<sub>f</sub> 存在), 如果這是已知那實際上我們也就不需要做 PLA, 所以這部分通常是未知, 另一個問題是怎麼知道要做多久才會結束?
 
