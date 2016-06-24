@@ -32,3 +32,7 @@ Let, **w**<sub>t+1</sub> = **w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</
 > 如果預期結果是正時, 因內積的兩個向量夾角過大才會是負, 所以修正方式是要往 **x** 方向靠近, 反之則要遠離 **x**
 
 Until no more mistakes.
+
+![](2DPLA.jpg)
+
+(以二維(2D)的 input 為例做想像)
