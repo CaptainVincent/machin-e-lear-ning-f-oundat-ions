@@ -1,11 +1,11 @@
-0
-## Perceptron Learning Algorith## Perceptron Learning Algorithm
+## Perceptron Learning Algorith
+
 在開始用數學工具幫助我們理解為何可以學習前, 這裡先介紹一種簡單的機器學習演算法, 並在後續透過這個例子來加入數學工具分析 Machine Learning 的限制。
 
 
 首先介紹一組 Hypothesis Set 的定義方式稱作 **Perceptron** 來求一個是非題的解, 數學上的符號如下
 
-令 **x** 為 d 維度的 input, **w** 為 d 維度的權重值
+(令 **x** 為 d 維度的 input, **w** 為 d 維度的權重值)
 
 **H**ypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>∞</sub>}
 
@@ -38,3 +38,10 @@ Until no more mistakes.
 (以二維(2D)的 input 為例做想像)
 
 > sign (**w**<sup>T</sup>**x**) 中, **w**<sup>T</sup>**x** = 0 在二維中是一條法相量為 **w**<sup>T</sup> 的直線二分其結果 y, 在高維度時則是劃分結果 y 的則是法相量 **w**<sup>T</sup> 的高維平面。
+
+### 是否會終止 ?
+* Linear Separability 線性可分
+> PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件在於存在一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
+> 
+> 同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
+* PLA 每次的修正是否有朝更好的方向前進
