@@ -3,10 +3,11 @@
 
 > 本書中圖片出處若無特別註明, 皆出自 **本課程上課講義**。
 
-> 書中公式皆摘錄課程上課講義, 唯獨抄寫輸入部分使用 Mathjax 工具
-
 ## 參考文獻
-
+* [課程投影片網址](http://www.csie.ntu.edu.tw/~htlin/mooc/)
+* [Youtube 上課視頻連結](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
+* http://beader.me/mlnotebook/
+* http://beader.me/
 
 ## 筆者聯絡方式
 Mail: [captainvincenttw@gmail.com](mailto:captainvincenttw@gmail.com)
