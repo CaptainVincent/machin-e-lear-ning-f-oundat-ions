@@ -9,3 +9,14 @@ P [|ν - μ| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N), ɛ 為誤差範圍、N 為取�
 
 * 誤差愈大 或 取樣數愈大, 不等式右項就愈小, 表示發生的可能性愈低
 * ν = μ 是 PAC (**P**robably **A**pproximately **C**orrect) 很大的機會是對的, 但還是有例外
+
+## Topic II
+假定透過相同的 P 機率分佈作為產生 訓練資料(in) 及 測試資料(out) 的樣本, 這邊機率的意涵為 **D**ata 透過特定 **H**ypothesis 產生對或錯的機率 (使用 **E**rror 作為錯誤的機率)。
+
+P [|E<sub>in</sub>(h) - E<sub>out</sub>(h)| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N)
+
+所以當取樣夠多時
+
+* E<sub>in</sub>(h) ≈ E<sub>out</sub>(h)
+* 又當 E<sub>in</sub>(h) 夠小時, g = f is PAC (**P**robably **A**pproximately **C**orrect)
+* 說明了如何驗證一個 Hypothesis 的好壞, 但不保證被 Algorithm 挑選到
