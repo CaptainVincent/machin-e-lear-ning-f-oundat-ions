@@ -19,4 +19,11 @@ P [|E<sub>in</sub>(h) - E<sub>out</sub>(h)| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N)
 
 * E<sub>in</sub>(h) ≈ E<sub>out</sub>(h)
 * 又當 E<sub>in</sub>(h) 夠小時, g = f is PAC (**P**robably **A**pproximately **C**orrect)
-* 此評估 outside **D** 的方式, 說明了如何驗證一個 Hypothesis 的好壞, 但不保證此 Hypothesis 會被 Algorithm 挑選到
+* 此評估 outside **D** 的方式, 說明了如何驗證單一一個 Hypothesis 的好壞, 但不保證此 Hypothesis 會被 Algorithm 挑選到
+
+##### Topic III (Pick Algorithm)
+挑選 Hypothesis 的限制, E<sub>in</sub>(h) 最低不一定代表是最佳, 因為 sample 到不好的資料會讓 E<sub>in</sub>(h)、E<sub>out</sub>(h) 相距很遠, 當有選擇時, 會讓選出錯誤的 Hypothesis 機率增加 (更容易選到 overfitting 的假說)。
+
+**令有限 M 種的 Hypothesis**, 由 Topic I **Hoeffding's Inequality** 知道個別 Hypothesis 選中不好的資料 (E<sub>in</sub>(h)、E<sub>out</sub>(h) 相距很遠) 的機率不高, 所以 Σ <sub>(i=0~M) </sub>P<sub>D</sub>[BAD of D]≤ 2 M exp (-2ɛ<sup>2</sup>N), 可得知當取樣個數夠多時 且 有限個數 M 的 **H**, E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
+
+> Ｍ 的挑選是個取捨, 過小的話可以讓選中不好的 g 機會降低, 但是可以選的選項太少反而不一定存在可以挑出夠小的 E<sub>in</sub>(h), 太大的 M 則是讓選出不好的 g 機率增加。
