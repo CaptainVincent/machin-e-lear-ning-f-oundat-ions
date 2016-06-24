@@ -36,3 +36,5 @@ Until no more mistakes.
 <img src="2DPLA.jpg" width="237" height="218"/>
 
 (以二維(2D)的 input 為例做想像)
+
+> sign (**w**<sup>T</sup>**x**) 中, **w**<sup>T</sup>**x** = 0 在二維中是一條法相量為 **w**<sup>T</sup> 的直線二分其結果 y, 在高維度時則是劃分結果 y 的則是法相量 **w**<sup>T</sup> 的高維平面。
