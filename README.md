@@ -1,5 +1,5 @@
 # 寫在最前面
-本書為紀錄 此書的撰寫受到 http://beader.me/mlnotebook/ 的啟發, 開始編寫繁體版本的學習筆記, 透過筆者的消化吸收並整理試圖讓爾後翻閱複習更加容易。
+本書為整理台大資工系 林軒田 老師在 Coursera 開放式課程的 - (機器學習基石)[https://www.coursera.org/course/ntumlone] 此書的撰寫受到 http://beader.me/mlnotebook/ 的啟發, 開始編寫繁體版本的學習筆記, 透過筆者的消化吸收並整理試圖讓爾後翻閱複習更加容易。
 
 ## 參考文獻
 
