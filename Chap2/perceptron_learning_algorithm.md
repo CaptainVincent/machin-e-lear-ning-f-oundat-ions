@@ -44,4 +44,57 @@ Until no more mistakes.
 > PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件在於存在一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
 > 
 > 同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
-* PLA 每次的修正是否有朝更好的方向前進
+* PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
+> **w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
+>
+> 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
+>
+
+<div> 
+\begin{equation}
+  \begin{split}
+  w_f^Tw_T &\geq w_f^Tw_{T-1} + min\ {y_nw_f^Tx_n} \\\
+           &\geq ... \\\
+           &\geq w_f^Tw_0 + T\cdot min\ {y_nw_f^Tx_n} = T\cdot min\ {y_nw_f^Tx_n}
+  \end{split}
+  \end{equation}
+</div>
+透過前式, 我們可以一路推導做了 T 次修正後如上的結果
+
+<div> 
+\begin{equation}
+\begin{split}
+||w_{t+1}||^2 &=    ||w_t + y_{n(t)}x_{n(t)}||^2 \\\
+              &=    ||w_t||^2 + 2y_{n(t)}w_t^Tx_{n(t)} + ||y_{n(t)}x_{n(t)}||^2\\\
+              &\leq ||w_t||^2 + 0 + ||y_{n(t)}x_{n(t)}||^2 \\\
+              &\leq ||w_t||^2 + max\ {||x_n||^2}
+\end{split}
+\end{equation}
+</div>
+因為我們僅在錯誤的時候做修正, 所以中間項的乘積會 < 0, 上式就是我們得到的向量長度 Upper bound
+
+<div> 
+\begin{equation}
+\begin{split}
+  ||w_T||^2 &\leq ||w_{T-1}||^2 + max\ {||x_n||^2} \\\
+            &\leq ... \\\
+            &\leq ||w_0||^2 + T\cdot max\ {||x_n||^2} = T\cdot max\ {||x_n||^2}
+\end{split}
+\end{equation}
+</div>
+接著一樣透過前式, 我們可以一路推導做了 T 次修正後如上的結果
+
+<div>
+\begin{equation}  
+\begin{split}   
+1 &\geq \frac{w_f^Tw_T}{||w_f||||w_T||} &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||||w_T||} \ &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||\cdot \sqrt{T}\cdot max\ {||x_n||^2}}  = \frac {\sqrt{T}\rho}{R}   
+\end{split}    
+\end{equation}
+</div>
+最後可以求出 cos θ 經過 T 次迭代後的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時
+
+* PLA 確實可修正 **W**<sub>t</sub> 使其更加靠近 **W**<sub>f</sub>
+* 由 lower bound 可以知道經過有限次的迭代後, 此演算法會中止
+* 綜合以上兩點所以 PLA 可以找到一條完美的分割線
+
+得到以上的結果後, 對於 PLA 還是存在一些疑問, 包括了如何知道資料是線性可分 (**W**<sub>f</sub> 存在), 如果是已知那實際上我們也就不需要做 PLA, 所以這部分通常是未知, 另一個問題是怎麼知道要做多久才會結束?
