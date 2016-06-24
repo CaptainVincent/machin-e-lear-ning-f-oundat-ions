@@ -5,7 +5,7 @@
 
 首先介紹一組 Hypothesis Set 的定義方式稱作 **Perceptron** 來求一個是非題的解, 數學上的符號如下
 
-令 **x** 為 d 維度的 input, **w** 為 d 維度的權重值
+(令 **x** 為 d 維度的 input, **w** 為 d 維度的權重值)
 
 **H**ypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>∞</sub>}
 
@@ -44,3 +44,5 @@ Until no more mistakes.
 > PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件在於存在一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
 > 
 > y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
+>
+> 因為 **w**、**x** 內積相乘皆與 y 同向, 
