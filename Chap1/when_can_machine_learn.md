@@ -23,6 +23,8 @@
 * **A** takes **D** and **H** to get **g** ≈ **f**, 機器學習是透過資料從假說中挑選最接近目標函式者, 用以推測訓練資料以外的其他資料結果
 * Learning Model = **A** and **H**
 
+透過以上的 Learning Model, 看起來我們好像真的有個系統可以幫助我們學習到一些可量化評估的事情。
+
 > **Machine Learning vs Data Mining**
 
 > 資料探勘通常是對大量的資料中尋找有用的性質, 如果這個性質的目標是找出更好的 hypothesis, 則兩者的差異不大 或是 可相互幫忙。
