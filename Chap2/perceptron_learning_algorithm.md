@@ -1,4 +1,4 @@
-## Perceptron Learning Algorith
+## Perceptron Learning Algorithm
 
 在開始用數學工具幫助我們理解為何可以學習前, 這裡先介紹一種簡單的機器學習演算法, 並在後續透過這個例子來加入數學工具分析 Machine Learning 的限制。
 
@@ -40,15 +40,16 @@ Until no more mistakes.
 > sign (**w**<sup>T</sup>**x**) 中, **w**<sup>T</sup>**x** = 0 在二維中是一條法相量為 **w**<sup>T</sup> 的直線二分其結果 y, 在高維度時則是劃分結果 y 的則是法相量 **w**<sup>T</sup> 的高維平面。
 
 ### 是否會終止 ?
-* Linear Separability 線性可分
-> PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件在於存在一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
-> 
-> 同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
-* PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
-> **w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
->
+
+####Linear Separability 線性可分
+PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件, 在於存在需一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
+
+同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
+
+####PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
+**w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
+
 > 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
->
 
 <div> 
 \begin{equation}
@@ -87,14 +88,13 @@ Until no more mistakes.
 <div>
 \begin{equation}  
 \begin{split}   
-1 &\geq \frac{w_f^Tw_T}{||w_f||||w_T||} &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||||w_T||} \ &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||\cdot \sqrt{T}\cdot max\ {||x_n||^2}}  = \frac {\sqrt{T}\rho}{R}   
+cosθ &\geq \frac{w_f^Tw_T}{||w_f||||w_T||} &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||||w_T||} \ &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||\cdot \sqrt{T}\cdot max\ {||x_n||^2}}  = \frac {\sqrt{T}\rho}{R}  
 \end{split}    
 \end{equation}
 </div>
-最後可以求出 cos θ 經過 T 次迭代後的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時
+> 最後可以求出 cos θ 經過 T 次迭代後成正比的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時, PLA 確實可修正 **W**<sub>t</sub> 使其更加靠近 **W**<sub>f</sub> 並中止。
 
-* PLA 確實可修正 **W**<sub>t</sub> 使其更加靠近 **W**<sub>f</sub>
-* 由 lower bound 可以知道經過有限次的迭代後, 此演算法會中止
-* 綜合以上兩點所以 PLA 可以找到一條完美的分割線
+得到以上的結果後, 對於 PLA 還是存在一些疑問, 包括了如何知道資料是線性可分 (**W**<sub>f</sub> 存在), 如果這是已知那實際上我們也就不需要做 PLA, 所以這部分通常是未知, 另一個問題是怎麼知道要做多久才會結束?
 
-得到以上的結果後, 對於 PLA 還是存在一些疑問, 包括了如何知道資料是線性可分 (**W**<sub>f</sub> 存在), 如果是已知那實際上我們也就不需要做 PLA, 所以這部分通常是未知, 另一個問題是怎麼知道要做多久才會結束?
+### Pocket Algorithm
+基於有效的挑選出完美的 g 其實是一個 NP-Hard 的問題, 所以這邊舉了另一個簡單的改進演算法, 演算法的精神是建立在 PLA 不停地挑選犯錯更少的 **W**<sub>t+1</sub> 出來, 直到夠多的迭代後以最終的結果為回傳值, 相較於 PLA 除了比對當前資料是否造成錯誤結果之外, Pocket Algorithm 要去計算所有資料的結果, 所以當今天資料是線性可分時, Pocket Algorithm 會比 PLA 慢, 但能確保有終止條件。
