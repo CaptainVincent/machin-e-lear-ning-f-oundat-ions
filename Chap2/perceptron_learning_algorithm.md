@@ -45,11 +45,11 @@ Until no more mistakes.
 PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件在於存在一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
 
 同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
-* PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
-> **w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
->
+
+####PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
+**w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
+
 > 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
->
 
 <div> 
 \begin{equation}
@@ -88,11 +88,11 @@ PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<s
 <div>
 \begin{equation}  
 \begin{split}   
-1 &\geq \frac{w_f^Tw_T}{||w_f||||w_T||} &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||||w_T||} \ &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||\cdot \sqrt{T}\cdot max\ {||x_n||^2}}  = \frac {\sqrt{T}\rho}{R}   
+cosθ &\geq \frac{w_f^Tw_T}{||w_f||||w_T||} &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||||w_T||} \ &\geq \frac{T\cdot min\ y_nw_f^Tx_n}{||w_f||\cdot \sqrt{T}\cdot max\ {||x_n||^2}}  = \frac {\sqrt{T}\rho}{R}  
 \end{split}    
 \end{equation}
 </div>
-最後可以求出 cos θ 經過 T 次迭代後的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時
+> 最後可以求出 cos θ 經過 T 次迭代後的收斂式子 (ρ 與 R 皆是我們導出的常數), 因此我們可知當今天的資料是 Linear Separability 時
 
 * PLA 確實可修正 **W**<sub>t</sub> 使其更加靠近 **W**<sub>f</sub>
 * 由 lower bound 可以知道經過有限次的迭代後, 此演算法會中止
