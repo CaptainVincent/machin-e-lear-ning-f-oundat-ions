@@ -6,7 +6,7 @@
 
 令 **x** 為 d 維度的 input, **w** 為 d 維度的權重值
 
-Hypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>∞</sub>}
+**H**ypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>∞</sub>}
 
 Σ <sub>(i=1~n)</sub> w<sub>i</sub>x<sub>i</sub> (再定義出一個 threshold 來二分這是非題的結果, y = {+1 , -1})
 
