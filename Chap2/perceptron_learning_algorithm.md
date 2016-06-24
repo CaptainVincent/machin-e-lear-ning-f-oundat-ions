@@ -45,3 +45,4 @@ Until no more mistakes.
 > 
 > 同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
 * PLA 每次的修正是否有朝更好的方向前進
+> **w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
