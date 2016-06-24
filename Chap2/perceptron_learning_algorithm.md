@@ -16,4 +16,4 @@ h(x) = sign ( Σ <sub>(i=1~n)</sub> w<sub>i</sub>x<sub>i</sub> - threshold )
 
 h(x) = sign ( Σ <sub>(i=0~d)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<sup>T</sup>**x**)
 
-> 相當於取 w 與 x 兩個 n+1 維的向量內積。
+> 相當於取 w 與 x 兩個 d+1 維的向量內積。
