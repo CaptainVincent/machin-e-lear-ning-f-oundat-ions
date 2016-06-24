@@ -34,5 +34,5 @@ Let, **w**<sub>t+1</sub> = **w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</
 Until no more mistakes.
 
 ![](2DPLA.jpg)
-
+<img src="2DPLA.jpg" width="200" height="200"/>
 (以二維(2D)的 input 為例做想像)
