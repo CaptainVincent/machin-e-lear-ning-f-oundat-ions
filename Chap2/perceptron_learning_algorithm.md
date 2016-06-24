@@ -51,7 +51,7 @@ PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<s
 
 > 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
 
-<div> 
+$$
 \begin{equation}
   \begin{split}
   w_f^Tw_T &\geq w_f^Tw_{T-1} + min\ {y_nw_f^Tx_n} \\\
@@ -59,7 +59,7 @@ PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<s
            &\geq w_f^Tw_0 + T\cdot min\ {y_nw_f^Tx_n} = T\cdot min\ {y_nw_f^Tx_n}
   \end{split}
   \end{equation}
-</div>
+$$
 透過前式, 我們可以一路推導做了 T 次修正後如上的結果
 
 <div> 
