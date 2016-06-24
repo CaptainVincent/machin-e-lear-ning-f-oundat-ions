@@ -19,4 +19,4 @@ P [|E<sub>in</sub>(h) - E<sub>out</sub>(h)| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N)
 
 * E<sub>in</sub>(h) ≈ E<sub>out</sub>(h)
 * 又當 E<sub>in</sub>(h) 夠小時, g = f is PAC (**P**robably **A**pproximately **C**orrect)
-* 說明了如何驗證一個 Hypothesis 的好壞, 但不保證被 Algorithm 挑選到
+* 說明了如何驗證一個 Hypothesis 的好壞, 但不保證此 Hypothesis 會被 Algorithm 挑選到
