@@ -46,7 +46,7 @@ E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
 > Ｍ 的挑選是個取捨, 過小的話可以讓選中不好的 g 機會降低, 但是可以選的選項太少反而不一定存在可以挑出夠小的 E<sub>in</sub>(h), 太大的 M 則是讓選出不好的 g 機率增加。
 
 ## Topic IV 收斂 Hypothesis Set
-∞ 多個 Hypothesis 會讓不等式的 Upper Bound 沒有意義, 原因在於 Set 之中其實存在許多相似重疊的 Hypothesis, 接著我們要收斂 Set 裡的個數, 先嘗試對 Hypothesis 做分類, 方法是從 **D**ata 的角度看待這些 Hypothesis 是將其歸類為何 ex. binary classification output y = {+1, -1}。
+∞ 多個 Hypothesis 會讓 Topic III 不等式的 Upper Bound 沒有意義, 原因在於 Set 之中其實存在許多相似重疊的 Hypothesis, 接著我們要收斂 Set 裡的個數, 先嘗試對 Hypothesis 做分類, 方法是從 **D**ata 的角度看待這些 Hypothesis 是將其歸類為何 ex. binary classification output y = {+1, -1}。
 
 **Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>)
 
