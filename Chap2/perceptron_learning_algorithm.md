@@ -1,4 +1,5 @@
-## Perceptron Learning Algorith## Perceptron Learning Algorithm
+## Perceptron Learning Algorith
+
 在開始用數學工具幫助我們理解為何可以學習前, 這裡先介紹一種簡單的機器學習演算法, 並在後續透過這個例子來加入數學工具分析 Machine Learning 的限制。
 
 
@@ -39,3 +40,5 @@ Until no more mistakes.
 > sign (**w**<sup>T</sup>**x**) 中, **w**<sup>T</sup>**x** = 0 在二維中是一條法相量為 **w**<sup>T</sup> 的直線二分其結果 y, 在高維度時則是劃分結果 y 的則是法相量 **w**<sup>T</sup> 的高維平面。
 
 ### 是否會終止 ?
+* Linear Separability 線性可分
+PLA
