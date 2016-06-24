@@ -41,4 +41,4 @@ Until no more mistakes.
 
 ### 是否會終止 ?
 * Linear Separability 線性可分
-PLA
+> PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>
