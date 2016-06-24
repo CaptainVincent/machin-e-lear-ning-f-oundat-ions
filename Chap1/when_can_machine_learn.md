@@ -26,7 +26,7 @@
 * **A** takes **D** and **H** to get **g** ≈ **f**, 機器學習是透過資料從假說中挑選最接近目標函式者, 用以推測訓練資料以外的其他資料結果
 * Learning Model = **A** and **H**
 
-透過以上的 Learning Model, 看起來我們好像真的有個系統可以幫助我們學習到一些可量化評估的事情。
+透過以上的 Learning Model, 看起來我們好像真的有個系統可以幫助我們學習到一些可量化評估的事情 (當然, 上面的模型其實我們還有很多的細節並未描述到)。
 
 > **Machine Learning vs Data Mining**
 
