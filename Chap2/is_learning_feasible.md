@@ -24,7 +24,7 @@ P [|E<sub>in</sub>(h) - E<sub>out</sub>(h)| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N)
 ## Topic III (Pick Hypothesis Algorithm)
 挑選 Hypothesis 的限制, E<sub>in</sub>(h) 最低不一定代表是最佳, 因為 sample 到不好的資料會讓 E<sub>in</sub>(h)、E<sub>out</sub>(h) 相距很遠, 當有選擇時, 會讓選出錯誤的 Hypothesis 機率增加 (更容易選到 overfitting 的假說, 只要某個 h 挑選到 bad sample data 時)。
 
-###那究竟這個遇見 bad Sample 的機率有多高呢?
+####那究竟這個遇見 bad Sample 的機率有多高呢?
 
 **令有限 M 種的 Hypothesis**, 由 Topic I **Hoeffding's Inequality** 知道個別 Hypothesis 選中不好的資料 (E<sub>in</sub>(h)、E<sub>out</sub>(h) 相距很遠) 的機率不高, 所以 Σ <sub>(i=0~M) </sub>P<sub>D</sub>[BAD of D]≤ 2 M exp (-2ɛ<sup>2</sup>N), 可得知當取樣個數夠多時 且 有限個數 M 的 **H**, E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
 
