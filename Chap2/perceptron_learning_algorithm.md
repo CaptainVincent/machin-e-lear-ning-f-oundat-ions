@@ -7,3 +7,11 @@
 Hypothesis Set = {**w**<sub>1</sub>, **w**<sub>2</sub>, ... **w**<sub>∞</sub>}
 
 Σ <sub>(i=1~n)</sub> w<sub>i</sub>x<sub>i</sub> (再定義出一個 threshold 來二分這是非題的結果, y = {+1 , -1})
+
+h(x) = sign ( Σ <sub>(i=1~n)</sub> w<sub>i</sub>x<sub>i</sub> - threshold ) 
+
+令 w<sub>0</sub> 為 -threshold、x<sub>0</sub> 為 1, 則化簡如下
+
+h(x) = sign ( Σ <sub>(i=0~n)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<sup>T</sup>**x**)
+
+> 相當於取 w 與 x 兩個 n+1 維的向量內積。
