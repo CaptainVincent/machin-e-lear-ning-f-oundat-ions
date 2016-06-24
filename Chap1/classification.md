@@ -1,4 +1,4 @@
-## Classification 機器學習的分類
+# Classification 機器學習的分類
 在整個學習的 Model 中針對控制變因的種類區分定義其特性。
 
 ##### 以提供不同 y<sub>n</sub> 形式區分的學習方式
