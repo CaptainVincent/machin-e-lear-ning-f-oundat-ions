@@ -49,7 +49,8 @@ Until no more mistakes.
 >
 > 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
 >
-><div> 
+
+<div> 
 \begin{equation}
   \begin{split}
   w_f^Tw_T &\geq w_f^Tw_{T-1} + min\ {y_nw_f^Tx_n} \\\
