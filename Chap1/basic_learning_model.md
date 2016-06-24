@@ -1,4 +1,8 @@
-## Model Component
+# Model Component
+![](001 LearnModel.jpg)
+<center>(Basic Lerarn Model)</center>
+
+
 * **A**lgorithm, learning algorithm 為挑選假說的演算法
 * **D**ata Set, D: {(**X**<sub>1</sub>,Y<sub>1</sub>), (**X**<sub>2</sub>,Y<sub>2</sub>), ... (**X**<sub>N</sub>,Y<sub>N</sub>)}
 * **X** 為 input 的特徵向量, Y 為 Output
