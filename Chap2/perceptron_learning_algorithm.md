@@ -47,4 +47,6 @@ Until no more mistakes.
 * PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
 > **w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
 >
-> 上式僅證明了一半, 因為內積愈大有可能是因為角度愈靠近, 卻也有可能是因為向量長度的關係
+> 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
+>
+>
