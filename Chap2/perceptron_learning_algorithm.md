@@ -1,4 +1,4 @@
-## Perceptron Learning Algorithm
+# Perceptron Learning Algorithm
 
 在開始用數學工具幫助我們理解為何可以學習前, 這裡先介紹一種簡單的機器學習演算法, 並在後續透過這個例子來加入數學工具分析 Machine Learning 的限制。
 
@@ -21,7 +21,7 @@ h(x) = sign ( Σ <sub>(i=0~d)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<s
 
 目標是從 **H**ypothesis Set 中挑選出最接近 f 的 g, 而這最接近的定義為在已經看過的資料中可以產出愈相同的 output , 但實際上整個 H 是一個無限大的集合, 所以 **PLA** (Perceptron Learning Algorithm) 的想法是嘗試先從中挑選出第一個 g<sub>0</sub> (或稱 **w**<sub>0</sub>), 並不斷的在錯誤中修正。
 
-### 演算法
+## 演算法
 
 If, sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) ≠ y<sub>n(t)</sub>
 
@@ -39,14 +39,14 @@ Until no more mistakes.
 
 > sign (**w**<sup>T</sup>**x**) 中, **w**<sup>T</sup>**x** = 0 在二維中是一條法相量為 **w**<sup>T</sup> 的直線二分其結果 y, 在高維度時則是劃分結果 y 的則是法相量 **w**<sup>T</sup> 的高維平面。
 
-### 是否會終止 ?
+## 是否會終止 ?
 
-####Linear Separability 線性可分
+#### Linear Separability 線性可分
 PLA 會終止的條件在於可以找到一個 **w**, 使得所有 sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) = y<sub>n(t)</sub>, 所以最根本的條件, 在於存在需一條分割線/平面可以將所有 input **x** 根據 ouput y 劃分開來, 此特性稱作線性可分。
 
 同時 y<sub>n(t)</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n(t)</sub> (所有 input 包含發生錯誤的點) ≥ min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > 0
 
-####PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
+#### PLA 在線性可分的情況下, 每次的修正是否有朝更好的方向前進
 **w**<sub>f</sub><sup>T</sup> **w**<sub>t+1</sub> = **w**<sub>f</sub><sup>T</sup> (**w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>) >= **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub> + min( y<sub>n</sub> **w**<sub>f</sub><sup>T</sup>**x**<sub>n</sub> ) > **w**<sub>f</sub><sup>T</sup> **w**<sub>t</sub>
 
 > 上式僅證明了一半, 因為內積愈大有可能是因為 **角度愈靠近**, 卻也有可能是因為 **向量長度** 所造成
@@ -96,5 +96,5 @@ $$
 
 得到以上的結果後, 對於 PLA 還是存在一些疑問, 包括了如何知道資料是線性可分 (**W**<sub>f</sub> 存在), 如果這是已知那實際上我們也就不需要做 PLA, 所以這部分通常是未知, 另一個問題是怎麼知道要做多久才會結束?
 
-### Pocket Algorithm
+## Pocket Algorithm
 基於有效的挑選出完美的 g 其實是一個 NP-Hard 的問題, 所以這邊舉了另一個簡單的改進演算法, 演算法的精神是建立在 PLA 不停地挑選犯錯更少的 **W**<sub>t+1</sub> 出來, 直到夠多的迭代後以最終的結果為回傳值, 相較於 PLA 除了比對當前資料是否造成錯誤結果之外, Pocket Algorithm 要去計算所有資料的結果, 所以當今天資料是線性可分時, Pocket Algorithm 會比 PLA 慢, 但能確保有終止條件。
