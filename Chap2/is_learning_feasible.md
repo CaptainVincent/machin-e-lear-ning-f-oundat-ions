@@ -11,7 +11,7 @@ P [|ν - μ| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N), ɛ 為誤差範圍、N 為取�
 * ν = μ 是 PAC (**P**robably **A**pproximately **C**orrect) 很大的機會是對的, 但還是有例外
 
 ## Topic II
-將 Hoeffding's Inequality 導入 Learning Model 推敲 outside **D**ata, 假設產生 訓練資料(inside **D**) 及 測試資料(outside **D**) 的是透過相同的 P 機率分佈, 這邊機率的意涵為 **D**ata 透過特定 **H**ypothesis 產生對或錯的機率 (使用 **E**rror 表示錯誤的機率)。
+將 Hoeffding's Inequality 導入 Learning Model 推敲 outside **D**ata, 假設產生 訓練資料(inside **D**) 及 測試資料(outside **D**) 是透過相同的 P 機率分佈 function, 這邊機率的意涵為 **D**ata 透過特定 **H**ypothesis 產生對或錯的機率 (使用 **E**rror 表示錯誤的機率)。
 
 P [|E<sub>in</sub>(h) - E<sub>out</sub>(h)| > ɛ] ≤ 2 exp (-2ɛ<sup>2</sup>N)
 
