@@ -119,7 +119,7 @@ B(N,k)\leq \sum_{i=0}^{k-1}\binom {N}{i}
 $$
 
 當 N = 1 時代入很容易得知成立, 假設 N = N' 也成立, 透過以下推導得知 N = N'+1 也會成立, 得證
-<div> 
+$$
 \begin{aligned}
 B(N'+1,k) &\leq B(N',k) + B(N',k-1) \\\
 &\leq \sum_{i=0}^{k-1}\binom{N'}{i}+\sum_{i=0}^{k-2}\binom{N'}{i} \\\
@@ -127,6 +127,6 @@ B(N'+1,k) &\leq B(N',k) + B(N',k-1) \\\
 &=1+\sum_{i=1}^{k-1}[\binom{N'}{i}+\binom{N'}{i-1}] \\\
 &=1+\sum_{i=1}^{k-1}\binom{N'+1}{i}=\sum_{i=0}^{k-1}\binom{N'+1}{i}
 \end{aligned}
-</div>
+$$
 
 所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial (上式其實可以反向再證明 LHS = RHS, 不僅僅是 upper bound)
