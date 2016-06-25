@@ -67,3 +67,27 @@ For any **y**, sign (**Xw**) = **y**, 那我們試著找一個 **w** 使得 **Xw
 
 ##### Step 2. 證明 $$d_{vc} \le d+1$$
 > 證明的方式就是要證明當 **x** 為 d 維度時, d + 2 個以上的 output 都不能被 shattered
+
+將之前設計的矩陣加入第 d+2 筆的 input
+$$
+X =
+ \left[
+ \begin{matrix}
+   - x_1^T - \\
+   - x_2^T - \\
+   - x_3^T - \\
+   : \\
+   - x_{d+1}^T - \\
+   - x_{d+2}^T - 
+ \end{matrix}
+ \right]
+$$
+則 因為線性相依的關係 (d+1 維, 且 前 d+1 筆資料是線性獨立, 第 d+2 筆肯定能由前 d+1 筆向量組合而成)
+
+$$x_{d+2} = a_1x_1 + a_2x_2 + ... + a_{d+1}x_{d+1}$$
+
+假設 d+2 種 output 都能被 shattered 的話, 那麼 d+1 種的 output 也要能被 shattered, 所以此時我們假設存在 **w** 可以使得 $$sign(a_n) = sign(w^Tx_n)$$, 因為與係數同向也僅是其中一種 output y (Shatter 理應要存在)
+
+$$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$ (恆成立)
+
+所以至少有一種是無法被產生出來的 output, 那就是以上的 case 搭配上 $$y_{d+2}$$ < 0 (反正法得證)
