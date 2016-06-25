@@ -20,6 +20,8 @@ $$
 代換之後的不等式如上, 嚴謹數學證明參考自 [beader.me](http://beader.me/mlnotebook/section2/vc-dimension-two.html)
 
 $$
+\begin{aligned}
 \mathbb{P}_\mathcal{D}[BAD\ D]\le 2 \cdot \mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E'_{in}(h) > \frac{\epsilon}{2}]
+\end
 $$
 
