@@ -1,8 +1,6 @@
 # VC Dimension
 VC Dimension ($$V_{dc}$$) = 'minimum K' -1
 
-
-
 $$
 \begin{aligned}
 \\m_{\mathcal{H}}(N)\leq \sum_{i=0}^{d_{vc}}\binom {N}{i}\leq N^{d_{vc}} \\\
