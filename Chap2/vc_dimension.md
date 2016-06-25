@@ -1,4 +1,4 @@
-# VC Dimension
+# VC Dimensio# VC Dimension
 VC Dimension ($$V_{dc}$$) = 'minimum K' -1
 
 ![](dc_dimension.jpg)
@@ -90,4 +90,31 @@ $$x_{d+2} = a_1x_1 + a_2x_2 + ... + a_{d+1}x_{d+1}$$
 
 $$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$ (恆成立)
 
-所以至少有一種是無法被產生出來的 output, 那就是以上的 case 搭配上 $$y_{d+2}$$ < 0 (反證法得證)
+所以至少有一種是無法被產生出來的 output, 那就是以上的 case 搭配上 $$y_{d+2}$$ < 0 (反證法得證)。
+
+## Homework 補充
+[證明參考](http://beader.me/mlnotebook/section2/vc-dimension-three.html)
+
+$$d_{vc}(\cup_{k=1}^{K}\mathcal{H}_k) = d_{vc}(\mathcal{H}_1)+d_{vc}(\mathcal{H}_2)+ K - 1$$
+
+## 複雜度評估
+$$
+\begin{aligned}
+\mathbb{P}[BAD] &= \mathbb{P}[\exists h \in \mathcal{H}\text{ s.t. } |E_{in}(h)-E_{out}(h)|\gt \epsilon] \\\
+&\leq 4(2N)^{d_{vc}}exp(-\frac{1}{8}\epsilon^2N)
+\end{aligned}
+$$將右式定義為 $$\delta$$, 移項可得 $$\epsilon = \sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})}$$
+
+$$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) \leq E_{in}(g)+\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})}$$
+
+重新定義 $$\Omega (N,\mathcal{H},\delta) = 上式的\ \sqrt{...}\ 項$$, 稱作 Penalty for Model Complexity (Model 是指 hypothesis, 而這個 penalty 就是指在我們要有多強的 Hypothesis Set 時, 所需付出的代價)
+![](model_complexity_curve.png)
+* $$d_{vc} \uparrow: E_{in} \downarrow but\ \Omega\uparrow$$
+* $$d_{vc} \downarrow: E_{in} \uparrow but\ \Omega\downarrow$$
+* best $$d^*_{vc} in the middle$$
+
+透過上式可以了解, 並非一昧地追求 VC dimesion 愈大愈好, 而另一個使用 VC bound 的方式, 是用來侷限資料量 稱 Sample Complexity, 當今天目標鎖定了 $$\epsilon, \delta, d_{vc}$$ 我們究竟需要多少的 input 才能達到符合 $$\lt \delta$$ 的目標。
+
+> $$\epsilon = 0.1$$, $$\delta = 0.1, $$ $$d_{vc} = 3$$, 迭代不同的 $$d_{vc}$$ 所求出的關係式 $$N\approx 10,000d_{vc}$$
+>
+> 但是通常 $$N\approx 10d_{vc}$$ 實務上已足夠。(也隱含著 VC Bound 實際上是相當寬鬆不精準的上限)
