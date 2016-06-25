@@ -98,4 +98,9 @@ $$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$ (恆成�
 $$d_{vc}(\cup_{k=1}^{K}\mathcal{H}_k) = d_{vc}(\mathcal{H}_1)+d_{vc}(\mathcal{H}_2)+ K - 1$$
 
 ## 複雜度評估
-
+$$
+\begin{aligned}
+\mathbb{P}[BAD] &= \mathbb{P}[\exists h \in \mathcal{H}\text{ s.t. } |E_{in}(h)-E_{out}(h)|\gt \epsilon] \\\
+&\leq 4m_{\mathcal{H}}(2N)exp(-\frac{1}{8}\epsilon^2N)
+\end{aligned}
+$$
