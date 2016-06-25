@@ -34,7 +34,7 @@ $$
 ### Proof
 
 ##### Step 1. 證明 $$d_{vc} \ge d+1$$
->證明的方式就是要證明當 **x** 為 d 維度時, d + 1 個 output 可以被 shattered
+> 證明的方式就是要證明當 **x** 為 d 維度時, d + 1 個 output 可以被 shattered
 
 設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **X** 矩陣 (**X** 反矩陣存在 **invertible**)
 $$
@@ -66,3 +66,4 @@ For any **y**, sign (**Xw**) = **y**, 那我們試著找一個 **w** 使得 **Xw
 由前提知設計出的**X** 反矩陣存在, 所以 **w** = **X<sup>-1</sup>y** 也會存在, 得證存在某個 hypothesis **w** 使得任意 **y** 都可以被產生出來 (Shattered)。
 
 ##### Step 2. 證明 $$d_{vc} \le d+1$$
+> 證明的方式就是要證明當 **x** 為 d 維度時, d + 2 個以上的 output 都不能被 shattered
