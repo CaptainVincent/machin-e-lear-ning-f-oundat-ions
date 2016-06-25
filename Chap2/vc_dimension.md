@@ -67,3 +67,17 @@ For any **y**, sign (**Xw**) = **y**, 那我們試著找一個 **w** 使得 **Xw
 
 ##### Step 2. 證明 $$d_{vc} \le d+1$$
 > 證明的方式就是要證明當 **x** 為 d 維度時, d + 2 個以上的 output 都不能被 shattered
+
+$$
+X =
+ \left[
+ \begin{matrix}
+   - x_1^T - \\
+   - x_2^T - \\
+   - x_3^T - \\
+   : \\
+   - x_{d+1}^T - 
+   - x_{d+2}^T - 
+ \end{matrix}
+ \right]
+$$
