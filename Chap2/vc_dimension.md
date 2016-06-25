@@ -32,9 +32,9 @@ $$
 * d-D perceptron: $$d{vc} =^? d + 1$$
 
 ### Proof
-設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **x** 矩陣 (**x** 反矩陣存在 **invertible**)
+設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **X** 矩陣 (**X** 反矩陣存在 **invertible**)
 $$
-x =
+X =
  \left[
  \begin{matrix}
    - x_1^T - \\
@@ -55,3 +55,4 @@ x =
  \end{matrix}
  \right]
 $$
+sign (**Xw**) = **y**
