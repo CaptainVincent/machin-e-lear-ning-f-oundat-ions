@@ -32,6 +32,7 @@ $$
 * d-D perceptron: $$d{vc} =^? d + 1$$
 
 ### Proof
+設計
 $$
 x =
  \left[
