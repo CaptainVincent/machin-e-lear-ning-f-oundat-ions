@@ -35,4 +35,4 @@ $$
 &\le 2m_{H}(2N)\mathbb{P} [fixed \ h \ s.t. | E_{in}(h) - E'_{in}(h)| > \frac{\epsilon}{2}]
 \end{aligned}
 $$
-這邊使用 $$m_{H}(2N)$$ 來表示兩次 (D and D') 抽出的 input, Hypothesis 可以將它們分類的種類上限有幾種,
+這邊使用 $$m_{H}(2N)$$ 來表示兩次 (D and D') 抽出的 input, Hypothesis 可以將它們分類的種類上限有幾種, ... (證明待補)
