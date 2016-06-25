@@ -67,7 +67,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 * 四筆資料時, 則最多只有 14 種 (對角線為相同 output 的分割線不存在)
 
 ![](C4.jpg)
-* 五筆資料時, 則最多只有 22 種
+* 五筆資料時, 則最多只有 22 種 (將所有點排成一個圈, 將相鄰的點做不同個數的圈選做出排列組合)
 
 **Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 Effective Number of Lines。
 
