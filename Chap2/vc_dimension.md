@@ -1,5 +1,5 @@
 # VC Dimension
-VC Dimension (dvc) = 'minimum K' -1
+VC Dimension ($$V_{dc}$$) = 'minimum K' -1
 
 
 
