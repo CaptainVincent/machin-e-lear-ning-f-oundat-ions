@@ -32,6 +32,8 @@ $$
 * d-D perceptron: $$d{vc} =^? d + 1$$
 
 ### Proof
+
+##### Step 1. 證明 $$d_{vc} \ge d+1$$
 設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **X** 矩陣 (**X** 反矩陣存在 **invertible**)
 $$
 X =
@@ -55,4 +57,5 @@ X =
  \end{matrix}
  \right]
 $$
+Shat
 sign (**Xw**) = **y**
