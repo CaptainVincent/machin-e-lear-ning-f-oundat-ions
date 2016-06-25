@@ -41,4 +41,4 @@ $$
 透過數學歸納法瞭解 Break Point 如何影響 Dichotomy 的上限函數 (Bounding Function), 然後導出這個多項式關係的數量, 看是否能以此取代 Hoeffding's Inequality 中的 M, 最終得到當滿足 Hypothesis 具有 Break Point 時, 都可以透過夠多的 input 來達到
 
 * 降低 $$E_{in}$$
-* 同時也使 E_{in} 與 E_{out} 接近
+* 同時也使 $$E_{in}$$ 與 $$E_{out}$$ 接近
