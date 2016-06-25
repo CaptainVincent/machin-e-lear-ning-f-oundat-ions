@@ -49,6 +49,8 @@ E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
 
 **Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>)
 
+ex. binary classification output y = {+1, -1}。
+
 * 僅一筆資料時, 存在兩種 分割線／高維平面 將其 output 分為 +1 或 -1
 * 二筆資料時, 存在四種 分割線／高維平面 將這兩個資料特徵向量 output 分為 +1 或 -1
 * 三筆資料時, 最多存在八種 分割線／高維平面, 但如果三點共線時則僅六種 (+1,-1,+1), (-1,+1,-1) 的 分割線／高維平面 不存在
