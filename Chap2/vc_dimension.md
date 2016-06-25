@@ -107,11 +107,13 @@ $$將右式定義為 $$\delta$$, 移項可得 $$\epsilon = \sqrt{\frac{8}{N}ln(\
 
 $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) \leq E_{in}(g)+\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})}$$
 
-重新定義 $$\Omega (N,\mathcal{H},\delta) = 上式的\ \sqrt{...}\ 項$$, 稱作 Penalty for Model Complexity
+重新定義 $$\Omega (N,\mathcal{H},\delta) = 上式的\ \sqrt{...}\ 項$$, 稱作 Penalty for Model Complexity (Model 是指 hypothesis, 而這個 penalty 就是指在我們要有多強的 Hypothesis Set 時, 所需付出的代價)
 ![](model_complexity_curve.png)
 * $$d_{vc} \uparrow: E_{in} \downarrow but\ \Omega\uparrow$$
 * $$d_{vc} \downarrow: E_{in} \uparrow but\ \Omega\downarrow$$
 * best $$d^*_{vc} in the middle$$
 
+### Summary
+透過上式可以了解, 並非一昧地追求 VC dimesion, 另一個使用 VC bound 的方式是當今天目標鎖定了 $$\epsilon, \delta, d_{vc}$$ 我們究竟需要多少的 input 才能達到符合 $$\lt \delta$$ 的目標
 
-N\approx 10d_{vc}
+$$N\approx 10d_{vc}$$
