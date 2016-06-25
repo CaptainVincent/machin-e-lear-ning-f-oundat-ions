@@ -91,3 +91,8 @@ $$x_{d+2} = a_1x_1 + a_2x_2 + ... + a_{d+1}x_{d+1}$$
 $$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$ (恆成立)
 
 所以至少有一種是無法被產生出來的 output, 那就是以上的 case 搭配上 $$y_{d+2}$$ < 0 (反證法得證)。
+
+## Homework 補充
+[證明參考](http://beader.me/mlnotebook/section2/vc-dimension-three.html)
+
+$$d_{vc}(\cup_{k=1}^{K}\mathcal{H}_k)$$ = d_{vc}(\mathcal{H}_1)+d_{vc}(\mathcal{H}_2)+ K - 1
