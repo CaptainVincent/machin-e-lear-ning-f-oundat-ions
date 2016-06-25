@@ -59,5 +59,6 @@ X =
  \end{matrix}
  \right]
 $$
+根據定義
 
-sign (**Xw**) = **y**
+For any **y**, sign (**Xw**) = **y**
