@@ -34,7 +34,7 @@ $$
 ### Proof
 
 ##### Step 1. 證明 $$d_{vc} \ge d+1$$
->證明的方式就是要證明當 **x** 為 d 維度時, d + 1 個 output 都可以被 shattered
+>證明的方式就是要證明當 **x** 為 d 維度時, d + 1 個 output 可以被 shattered
 
 設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **X** 矩陣 (**X** 反矩陣存在 **invertible**)
 $$
@@ -59,5 +59,5 @@ X =
  \end{matrix}
  \right]
 $$
-Shat
+
 sign (**Xw**) = **y**
