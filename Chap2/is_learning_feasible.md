@@ -69,7 +69,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 ![](C4.jpg)
 * 五筆資料時, 則最多只有 22 種 (將所有點排在一個圓上, 將相鄰的點以不同個數的圈選做出各種組合)
 
-**Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 Effective Number of Lines。
+**Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 **Effective Number of Lines**。
 
 **Target** 目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 
 
