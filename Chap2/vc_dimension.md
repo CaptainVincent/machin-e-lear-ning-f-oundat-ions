@@ -25,3 +25,5 @@ $$
 * Good Data (N 夠大)
 * Good Algorithm (可以挑到夠小的 $$E_{in}$$)
 * Good Luck
+
+## VC Dimension for d-D Perceptron 
