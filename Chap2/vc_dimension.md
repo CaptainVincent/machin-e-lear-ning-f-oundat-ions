@@ -16,12 +16,42 @@ $$
 &\leq \mathbb{P}[\exists h \in \mathcal{H}\text{ s.t. } |E_{in}(h)-E_{out}(h)|\gt \epsilon] \\\
 &\leq 4m_{\mathcal{H}}(2N)exp(-\frac{1}{8}\epsilon^2N) \\\
 &\leq 4(2N)^{d_{vc}}exp(-\frac{1}{8}\epsilon^2N) \\\
-&\textit{( if }d_{vc}\textit{ is exists )}
+&\textit{( if }d_{vc}\textit{ is finite = k is exists)}
 \end{aligned}
 $$
 
 ## 機器學習的條件
 * Good Hypothesis Set (有 Break Point)
 * Good Data (N 夠大)
-* Good Algorithm (可以挑到夠小的 $$E_{in}$$)
+* Good Algorithm (可以挑到夠小 $$E_{in}$$ 的 Hypothesis)
 * Good Luck
+
+## VC Dimension for d-D Perceptron 
+* 1-D perceptron: $$d{vc} = 2$$
+* 2-D perceptron: $$d{vc} = 3$$
+* d-D perceptron: $$d{vc} =^? d + 1$$
+
+### Proof
+設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **x** 矩陣 (**x** 反矩陣存在 **invertible**)
+$$
+x =
+ \left[
+ \begin{matrix}
+   - x_1^T - \\
+   - x_2^T - \\
+   - x_3^T - \\
+   : \\
+   - x_{d+1}^T - 
+ \end{matrix}
+ \right]
+ =
+ \left[
+ \begin{matrix}
+   1&0&0&...&0 \\
+   1&1&0&...&0 \\
+   1&0&1&...&0 \\
+   &&:&& \\
+   1&0&0&...&1 \\
+ \end{matrix}
+ \right]
+$$
