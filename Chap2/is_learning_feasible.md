@@ -73,7 +73,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 **Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 **Effective Number of Lines**。
 
 ### Target
-目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 **Growth Function**
+目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 對應找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 **Growth Function**
 
 **Growth Function** m<sub>H</sub>(N) = max | H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) | ≤ 2<sup>N</sup>
 
@@ -87,8 +87,8 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 $$m_{\mathcal{H}(N)}=\binom{N+1}{2} + 1 = \frac{1}{2}N^2 + \frac{1}{2}N + 1 $$ (all -1 的 case)。
 ![](positive_intervals.png)
 
-* **Growth Function for Convex Sets** (凸多邊形內的區域結果為正), 其中一種可能是將所有資料排成圓形, 並將結果為正的點連線成多邊形, 此時 2<sup>N</sup> 所有種排列皆可以產生, 因為 Growth Function 是取 max, 所以僅需要造出這組即可得知 Growth Function 為 $$m_{\mathcal{H}(N)}=2^N$$。
-> 這個可以造出 2<sup>N</sup> 個所有 output 排列組合的 case 稱作 **Shattered**。
+* **Growth Function for Convex Sets** (凸多邊形內的區域結果為正), 其中一種可能是將所有資料排成圓形, 並將結果為正的點連線成多邊形, 此時 2<sup>N</sup> 所有種排列皆可以產生, 因為 Growth Function 是取 max, 所以僅需要造出這組, 即可得知 Growth Function 為 $$m_{\mathcal{H}(N)}=2^N$$。
+> 這個當任意挑選 N 個 input 卻有可能造出 2<sup>N</sup> 個所有 output 排列組合的 case 稱作 **Shattered**。
 
 ![](convex_sets.png)
 
@@ -100,18 +100,18 @@ $$m_{\mathcal{H}(N)}=\binom{N+1}{2} + 1 = \frac{1}{2}N^2 + \frac{1}{2}N + 1 $$ (
 
 ###Proof
 
-令 B(N,K) 為 **B**ounding Function, 其值是要抽象於 Growth Function 外只在乎其 Dichotomies 上限 (因為我們不一定知道 Hypothesis Set 的 Growth Function, 但想知道在什麼樣的條件下, 可以侷限住 Hypothesis 的種類上限), 解讀為 N 個 input 中任意取 K 項的不同 Dichotomy 個數 (當 K 為 break point 時), 而這邊重點又在於已知任取 K 項時不會 Shattered (種類 < 2<sup>K</sup>), 那是否能找得出 B(N,K) ≤ 多項式的複雜度 (個數)。 
+令 B(N,K) 為 **B**ounding Function, 其值是要抽象於 Growth Function 外只在乎其 Dichotomies 上限 (因為我們不一定知道手上 Hypothesis Set 的 Growth Function, 但想知道在 Break Point 存在的條件下, 是否可以侷限住 Hypothesis 的種類上限), 解讀為 N 個 input 中任意取 K 項的 Dichotomy 上限個數 (當 K 為 break point 時), 而這邊重點又在於已知任取 K 項時不會 Shattered (種類 < 2<sup>K</sup>), 欲找出 B(N,K) ≤ 多項式的複雜度 (個數)。 
 
 B(N,K) = 2α + β (將 Bounding Function 裡的組合, 拆分為 α 表示 Dichotomy 中僅最末項不同的個數, β 是剩餘個數 兩種)
 
-α + β ≤ B(N-1,K) (去掉最末項後 **僅** 留下不同的 Dichotomy 個數, 因為 B(N,K) 告訴我們任 K 項不 Shattered, 所以剩下的項本身也不會 Shattered)
+α + β ≤ B(N-1,K) (為去掉最末項後 **僅** 留下不同的 Dichotomy 個數, 因為 B(N,K) 告訴我們任 K 項不 Shattered, 所以只要 N-1 >= K 時 (下圖橘色標記部分), 剩下的項本身也不會 Shattered)
 
 α ≤ B(N-1,K-1) (若任取 K-1 項會 Shattered = 2<sup>K-1</sup>, 則加上之前去掉的最末項 =  2<sup>K</sup>, 與 Bounding Function 定義衝突)
 
 B(N,K) ≤ B(N-1,K) + B(N-1,K-1) (替換上式可得知)
 
 ![Bounding Function](https://c7.staticflickr.com/8/7396/27806904806_dc75eeba71.jpg)
-<center>(2D Perceptron Learning Algorithm)</center>
+<center>(以 2D Perceptron Learning Algorithm 為例)</center>
 
 透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sup>
 
@@ -137,5 +137,6 @@ $$
 所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅只是 upper bound), 而這個結果又讓我們知道當 Break Point 存在時, 挑選到錯誤的機率似乎是可以掌握的事。
 $$
 \mathbb{P}_\mathcal{D}[BAD\ D]\leq 2\cdot2m_{\mathcal{H}}(2 \cdot N)\cdot exp(-2 \cdot \frac{1}{16} \epsilon ^2N)
-$$完整的不等式如上, 中間替換的過程需要一些數學上的技巧推導, 並非直接將 M 以 $$m_{\mathcal{H}}$$ 取代, 下一節將繼續證明這個不等式。
+$$
+完整的不等式如上, 中間替換的過程需要一些數學上的技巧推導, 並非直接將 M 以 $$m_{\mathcal{H}}$$ 取代, 下一節將繼續證明這個不等式。
 
