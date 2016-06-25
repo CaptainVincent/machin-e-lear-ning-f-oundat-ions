@@ -86,4 +86,7 @@ $$
 
 $$x_{d+2} = a_1x_1 + a_2x_2 + ... + a_{d+1}x_{d+1}$$
 
+假設 d+2 種 output 都能被 shattered 的話, 那麼 d+1 種的 output 也要能被 shattered, 所以此時我們假設存在 **w** 可以使得 $$sign(a_n) = sign(w^Tx_n)$$, 因為與係數同向也僅是其中一種 output y (Shatter 理應要存在)
+
+$$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$
 
