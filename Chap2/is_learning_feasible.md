@@ -109,13 +109,13 @@ B(N,K) ≤ B(N-1,K) + B(N-1,K-1) (替換上式可得知)
 <center>(2D Perceptron Learning Algorithm)</center>
 
 透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sub>
-<div> 
+$$
 \begin{equation}
   \begin{split}
 B(N,k)\leq \sum_{i=0}^{k-1}\binom {N}{i}
 \end{split}
 \end{equation}
-</div>
+$$
 
 當 N = 1 時代入很容易得知成立, 假設 N = N' 也成立, 透過以下推導得知 N = N'+1 也會成立, 得證
 <div> 
