@@ -33,7 +33,7 @@ h(x) = sign ( Σ <sub>(i=0~d)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<s
 
 * Step3. Until no more mistakes.
 
-<img src="2DPLA.jpg" width="237" height="218" align="right"/>
+<img src="2DPLA.jpg" width="237" height="218"/>
 
 (以二維(2D)的 input 為例做想像)
 
