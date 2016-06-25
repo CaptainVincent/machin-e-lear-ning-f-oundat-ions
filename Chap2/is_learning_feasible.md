@@ -100,7 +100,7 @@ $$m_{\mathcal{H}(N)}=\binom{N+1}{2} + 1 = \frac{1}{2}N^2 + \frac{1}{2}N + 1 $$ (
 
 ###Proof
 
-令 B(N,K) 為 **B**ounding Function, 其值是要抽象於 Growth Function 外只在乎其 Dichotomies 上限 (因為我們不一定知道 Hypothesis Set 的 Growth Function, 但想知道在什麼樣的條件下, 可以侷限住 Hypothesis 的種類上限), 解讀為 N 個 input 中任意取 K 項的不同 Dichotomy 個數 (當 K 為 break point 時), 而這邊重點又在於已知任取 K 項時不會 Shattered (種類 < 2<sup>K</sup>), 那是否能找得出 B(N,K) ≤ 多項式的複雜度 (個數)。 
+令 B(N,K) 為 **B**ounding Function, 其值是要抽象於 Growth Function 外只在乎其 Dichotomies 上限 (因為我們不一定知道手上 Hypothesis Set 的 Growth Function, 但想知道在 Break Point 存在的條件下, 是否可以侷限住 Hypothesis 的種類上限), 解讀為 N 個 input 中任意取 K 項的 Dichotomy 上限個數 (當 K 為 break point 時), 而這邊重點又在於已知任取 K 項時不會 Shattered (種類 < 2<sup>K</sup>), 欲找出 B(N,K) ≤ 多項式的複雜度 (個數)。 
 
 B(N,K) = 2α + β (將 Bounding Function 裡的組合, 拆分為 α 表示 Dichotomy 中僅最末項不同的個數, β 是剩餘個數 兩種)
 
