@@ -78,7 +78,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 
 **Growth Function** m<sub>H</sub>(N) = max | H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) | ≤ 2<sup>N</sup>
 
-**Break Point** 第一個資料點 K 使得 m<sub>H</sub> (K) < 2<sup>K</sup>, 在  K < N 皆會成立 (K 不一定存在, 但如果有 K 存在, 這個演算法的錯誤率似乎就有機會)。
+**Break Point** 第一個資料點 K 使得 m<sub>H</sub> (K) < 2<sup>K</sup>, 在  K < N 皆會成立 (K 不一定存在, 但如果有 K 存在, 這個演算法的錯誤率收斂似乎就相當有機會)。
 
 **Example**
 
