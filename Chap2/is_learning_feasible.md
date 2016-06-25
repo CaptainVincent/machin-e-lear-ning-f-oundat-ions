@@ -45,15 +45,29 @@ E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
 > Ｍ 的挑選是個取捨, 過小的話可以讓選中不好的 g 機會降低, 但是可以選的選項太少反而不一定存在可以挑出夠小的 E<sub>in</sub>(h), 太大的 M 則是讓選出不好的 g 機率增加。
 
 ## Topic IV 收斂 Hypothesis Set
-延續上一個 Topic, ∞ 多個 Hypothesis 會讓 Topic III 不等式的 Upper Bound 沒有意義, 原因在於 Set 之中其實存在許多相似重疊的 Hypothesis, 它們造成挑選到錯誤機率的疊加效果過於放大 (使得 bound 太寬鬆), 接著我們要收斂 Set 裡的個數, 首先嘗試對 Hypothesis 做分類, 方法是從 **D**ata 的角度看待這些 Hypothesis 是將其歸類為何 ex. binary classification output y = {+1, -1}。
+<img src="hypothesis_overlap.jpeg" width="250" height="250"/>
+
+延續上一個 Topic, ∞ 多個 Hypothesis 會讓 Topic III 不等式的 Upper Bound 沒有意義, 原因在於 Set 之中其實存在許多相似重疊的 Hypothesis, 它們造成挑選到錯誤機率的疊加效果過於放大 (使得 bound 太寬鬆), 接著我們要收斂 Set 裡的個數, 首先嘗試對 Hypothesis 做分類, 方法是從 **D**ata 的角度看待這些 Hypothesis 是將其歸類為何。
 
 **Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>)
 
-* 僅一筆資料時, 存在兩種 分割線／高維平面 將其 output 分為 +1 或 -1
-* 二筆資料時, 存在四種 分割線／高維平面 將這兩個資料特徵向量 output 分為 +1 或 -1
-* 三筆資料時, 最多存在八種 分割線／高維平面, 但如果三點共線時則僅六種 (+1,-1,+1), (-1,+1,-1) 的 分割線／高維平面 不存在
-* 四筆資料時, 共平面時 (想像成二維), 則最多只有 14 種 (對角線為相同 output 的分割線／高維平面 不存在)
-* 五筆資料時, 共平面時 (想像成二維), 則最多只有 22 種
+ex. 2D Perceptron, binary classification output y = {+1, -1}。
+
+* 僅一筆資料時, 存在兩種 分割線 (多維度時是高維平面) 將其 output 分為 +1 或 -1
+
+![](C1.jpg)
+* 二筆資料時, 存在四種 分割線 (多維度時是高維平面) 將這兩個資料特徵向量 output 分為 +1 或 -1
+
+![](C2_1.jpg)
+![](C2_2.jpg)
+* 三筆資料時, 最多存在八種 分割線 (多維度時是高維平面), 但如果三點共線時則僅六種 (+1,-1,+1), (-1,+1,-1) 的 分割線／高維平面 不存在
+
+![](C3_1.jpg)
+![](C3_2.jpg)
+* 四筆資料時, 則最多只有 14 種 (對角線為相同 output 的分割線不存在)
+
+![](C4.jpg)
+* 五筆資料時, 則最多只有 22 種 (將所有點排在一個圓上, 將相鄰的點以不同個數的圈選做出各種組合)
 
 **Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 Effective Number of Lines。
 
