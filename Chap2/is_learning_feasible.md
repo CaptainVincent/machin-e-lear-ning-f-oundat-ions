@@ -108,7 +108,8 @@ B(N,K) ≤ B(N-1,K) + B(N-1,K-1) (替換上式可得知)
 ![Bounding Function](https://c7.staticflickr.com/8/7396/27806904806_dc75eeba71.jpg)
 <center>(2D Perceptron Learning Algorithm)</center>
 
-透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sub>
+透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sup>
+
 $$
 \begin{equation}
   \begin{split}
