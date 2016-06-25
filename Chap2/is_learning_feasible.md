@@ -85,7 +85,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 * **Growth Function for Positive Rays** (大於某個 threshold 結果為正), 則 ∞ 的 H 為 h(x) = sign( x - threshold ), 但 Growth Function 為 m<sub>H</sub>(N) = N+1, 因為僅有 N+1 種可以放置 threshold 的組合。
 * **Growth Function for Positive Intervals** (在某個區間內時, 結果為正), 則 ∞ 的 H 為 h(x) = +1 if x ∈ [l, r), -1 otherwise, 但 Growth Function 為 m<sub>H</sub>(N) = (C N+1 取 2) + 1 (all -1 的 case)。
 * **Growth Function for Convex Sets** (凸多邊形內的區域結果為正), 其中一種可能是將所有資料排成圓形, 並將結果為正的點連線成多邊形, 此時 2<sup>N</sup> 所有種排列皆可以產生, 因為 Growth Function 是取 max, 所以僅需要造出這組即可得知 Growth Function 為 m<sub>H</sub>(N) = 2<sup>N</sup>。
-> 這個可以造出 2<sup>N</sup> 個 output 排列組合的 case 稱作 **Shattered**。
+> 這個可以造出 2<sup>N</sup> 個所有 output 排列組合的 case 稱作 **Shattered**。
 
 
 **Conjecture 猜想**
