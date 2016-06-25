@@ -9,3 +9,5 @@ $$
 \textit{( for }N\geq 2, d_{vc}\geq 2\textit{ )}
 \end{aligned}
 $$
+## 機器學習的條件
+* Good Hyporthesis
