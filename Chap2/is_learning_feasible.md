@@ -137,5 +137,6 @@ $$
 所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅只是 upper bound), 而這個結果又讓我們知道當 Break Point 存在時, 挑選到錯誤的機率似乎是可以掌握的事。
 $$
 \mathbb{P}_\mathcal{D}[BAD\ D]\leq 2\cdot2m_{\mathcal{H}}(2 \cdot N)\cdot exp(-2 \cdot \frac{1}{16} \epsilon ^2N)
-$$完整的不等式如上, 中間替換的過程需要一些數學上的技巧推導, 並非直接將 M 以 $$m_{\mathcal{H}}$$ 取代, 下一節將繼續證明這個不等式。
+$$
+完整的不等式如上, 中間替換的過程需要一些數學上的技巧推導, 並非直接將 M 以 $$m_{\mathcal{H}}$$ 取代, 下一節將繼續證明這個不等式。
 
