@@ -18,3 +18,4 @@ $$
 \frac{1}{2}\mathbb{P}[\exists h \in H s.t. | E_{in}(h) - E_{out}(h) > \epsilon] \le \mathbb{P}[\exists h \in H s.t. | E_{in}(h) - E'_{in}(h) > \frac{\epsilon}{2}]
 $$
 代換之後的不等式如上, 嚴謹數學證明參考自 [beader.me](http://beader.me/mlnotebook/section2/vc-dimension-two.html)
+
