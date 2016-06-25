@@ -49,7 +49,9 @@ E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
 
 延續上一個 Topic, ∞ 多個 Hypothesis 會讓 Topic III 不等式的 Upper Bound 沒有意義, 原因在於 Set 之中其實存在許多相似重疊的 Hypothesis, 它們造成挑選到錯誤機率的疊加效果過於放大 (使得 bound 太寬鬆), 接著我們要收斂 Set 裡的個數, 首先嘗試對 Hypothesis 做分類, 方法是從 **D**ata 的角度看待這些 Hypothesis 是將其歸類為何。
 
-**Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>)
+**Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>), 透過分類後 Hypothesis 之後可得到
+
+$$\mathbb{P}[|E_{in}(g)-E_{out}(g)|\gt \epsilon]\leq 2\cdot effective(N)\cdot exp(-2\epsilon^2N)$$
 
 ex. 2D Perceptron, binary classification output y = {+1, -1}。
 
@@ -69,32 +71,39 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 ![](C4.jpg)
 * 五筆資料時, 則最多只有 22 種 (將所有點排在一個圓上, 將相鄰的點以不同個數的圈選做出各種組合)
 
-**Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 Effective Number of Lines。
+**Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 **Effective Number of Lines**。
 
-**Target** 目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 
+### Target
+目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 **Growth Function**
 
-Growth Function: m<sub>H</sub>(N) = max | H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) | ≤ 2<sup>N</sup>
+**Growth Function** m<sub>H</sub>(N) = max | H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) | ≤ 2<sup>N</sup>
 
-**Break Point** 第一個資料點 K 使得 m<sub>H</sub> (K) < 2<sup>K</sup>, 在  K < N 皆會成立。
+**Break Point** 第一個資料點 K 使得 m<sub>H</sub> (K) < 2<sup>K</sup>, 在  K < N 皆會成立 (K 不一定存在, 但如果有 K 存在, 這個演算法的錯誤率收斂似乎就相當有機會)。
 
 **Example**
 
-* Growth Function for Positive Rays (大於某個 threshold 結果為正), 則 ∞ 的 H 為 h(x) = sign( x - threshold ), 但 Growth Function 為 m<sub>H</sub>(N) = N+1, 因為僅有 N+1 種可以放置 threshold 的組合。
-* Growth Function for Positive Intervals (在某個區間內時, 結果為正), 則 ∞ 的 H 為 h(x) = +1 if x ∈ [l, r), -1 otherwise, 但 Growth Function 為 m<sub>H</sub>(N) = (C N+1 取 2) + 1 (all -1 的 case)。
-* Growth Function for Convex Sets (凸多邊形內的區域結果為正), 其中一種可能是將所有資料排成圓形, 並將結果為正的點連線成多邊形, 此時 2<sup>N</sup> 所有種排列皆可以產生, 因為 Growth Function 是取 max, 所以僅需要造出這組即可得知 Growth Function 為 m<sub>H</sub>(N) = 2<sup>N</sup>。
-> 成長函數為 2<sup>N</sup> 的這 N 個 input 被稱作 **Shattered**。
+* **Growth Function for Positive Rays** (大於某個 threshold 結果為正), 則 ∞ 的 H 為 h(x) = sign( x - threshold ), 但 Growth Function 為 $$m_{\mathcal{H}(N)}=N+1$$, 因為僅有 N+1 種可以放置 threshold 的組合。
+![](postive_rays.png)
+* **Growth Function for Positive Intervals** (在某個區間內時, 結果為正), 則 ∞ 的 H 為 h(x) = +1 if x ∈ [l, r), -1 otherwise, 但 Growth Function 為
+$$m_{\mathcal{H}(N)}=\binom{N+1}{2} + 1 = \frac{1}{2}N^2 + \frac{1}{2}N + 1 $$ (all -1 的 case)。
+![](positive_intervals.png)
+
+* **Growth Function for Convex Sets** (凸多邊形內的區域結果為正), 其中一種可能是將所有資料排成圓形, 並將結果為正的點連線成多邊形, 此時 2<sup>N</sup> 所有種排列皆可以產生, 因為 Growth Function 是取 max, 所以僅需要造出這組即可得知 Growth Function 為 $$m_{\mathcal{H}(N)}=2^N$$。
+> 這個可以造出 2<sup>N</sup> 個所有 output 排列組合的 case 稱作 **Shattered**。
+
+![](convex_sets.png)
 
 
 **Conjecture 猜想**
 
-* No break point: m<sub>H</sub>(K) = 2<sup>N</sup>
+* No break point: m<sub>H</sub>(K) = 2<sup>N</sup> **(Shattered)**
 * Exist break point K: m<sub>H</sub>(K) = O(N<sup>K-1</sup>) 之後會證明
 
-**Proof**
+###Proof
 
-令 B(N,K) 為 **B**ounding Function, 其值是要抽象於 Growth Function 外只在乎其 Dichotomies 上限, 解讀為 N 個 input 中任意取 K 項的不同 Dichotomy 個數 (當 K 為 break point 時), 而這邊重點又在於已知任取 K 項時不會 Shattered (種類 < 2<sup>K</sup>), 那是否能找得出 B(N,K) ≤ 多項式的複雜度 (個數)。 
+令 B(N,K) 為 **B**ounding Function, 其值是要抽象於 Growth Function 外只在乎其 Dichotomies 上限 (因為我們不一定知道 Hypothesis Set 的 Growth Function, 但想知道在什麼樣的條件下, 可以侷限住 Hypothesis 的種類上限), 解讀為 N 個 input 中任意取 K 項的不同 Dichotomy 個數 (當 K 為 break point 時), 而這邊重點又在於已知任取 K 項時不會 Shattered (種類 < 2<sup>K</sup>), 那是否能找得出 B(N,K) ≤ 多項式的複雜度 (個數)。 
 
-B(N,K) = 2α + β (拆分為 α 表示 Dichotomy 中僅最末項不同的個數, β 是剩餘個數)
+B(N,K) = 2α + β (將 Bounding Function 裡的組合, 拆分為 α 表示 Dichotomy 中僅最末項不同的個數, β 是剩餘個數 兩種)
 
 α + β ≤ B(N-1,K) (去掉最末項後 **僅** 留下不同的 Dichotomy 個數, 因為 B(N,K) 告訴我們任 K 項不 Shattered, 所以剩下的項本身也不會 Shattered)
 
@@ -105,17 +114,18 @@ B(N,K) ≤ B(N-1,K) + B(N-1,K-1) (替換上式可得知)
 ![Bounding Function](https://c7.staticflickr.com/8/7396/27806904806_dc75eeba71.jpg)
 <center>(2D Perceptron Learning Algorithm)</center>
 
-透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sub>
-<div> 
+透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sup>
+
+$$
 \begin{equation}
   \begin{split}
 B(N,k)\leq \sum_{i=0}^{k-1}\binom {N}{i}
 \end{split}
 \end{equation}
-</div>
+$$
 
 當 N = 1 時代入很容易得知成立, 假設 N = N' 也成立, 透過以下推導得知 N = N'+1 也會成立, 得證
-<div> 
+$$
 \begin{aligned}
 B(N'+1,k) &\leq B(N',k) + B(N',k-1) \\\
 &\leq \sum_{i=0}^{k-1}\binom{N'}{i}+\sum_{i=0}^{k-2}\binom{N'}{i} \\\
@@ -123,6 +133,6 @@ B(N'+1,k) &\leq B(N',k) + B(N',k-1) \\\
 &=1+\sum_{i=1}^{k-1}[\binom{N'}{i}+\binom{N'}{i-1}] \\\
 &=1+\sum_{i=1}^{k-1}\binom{N'+1}{i}=\sum_{i=0}^{k-1}\binom{N'+1}{i}
 \end{aligned}
-</div>
+$$
 
-所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial (上式其實可以反向再證明 LHS = RHS, 不僅僅是 upper bound)
+所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅只是 upper bound), 而這個結果又可讓我們知道
