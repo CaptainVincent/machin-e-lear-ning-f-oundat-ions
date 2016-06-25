@@ -15,14 +15,14 @@ $$
 ![](pdf_of_ein.png)
 
 $$
-\frac{1}{2}\mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E_{out}(h) > \epsilon] \le \mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E'_{in}(h) > \frac{\epsilon}{2}]
+\frac{1}{2}\mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E_{out}(h) > \epsilon] \le \mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E'_{in}(h)| > \frac{\epsilon}{2}]
 $$
 代換之後的不等式如上, 嚴謹數學證明參考自 [beader.me](http://beader.me/mlnotebook/section2/vc-dimension-two.html)
 
 $$
 \begin{aligned}
 \mathbb{P}[BAD\ D] &\le 2 \cdot \mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E'_{in}(h) > \frac{\epsilon}{2}] \\
-&\le 2m_{H}(2N)\mathbb{P} [fixed \ h]
+&\le 2m_{H}(2N)\mathbb{P} [fixed \ h \ s.t. | E_{in}(h) - E'_{in}(h)| > \frac{\epsilon}{2}]
 \end{aligned}
 $$
 
