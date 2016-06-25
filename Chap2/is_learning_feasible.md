@@ -129,4 +129,4 @@ B(N'+1,k) &\leq B(N',k) + B(N',k-1) \\\
 \end{aligned}
 $$
 
-所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅僅是 upper bound)
+所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅只是 upper bound)
