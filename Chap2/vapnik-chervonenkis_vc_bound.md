@@ -14,6 +14,16 @@ $$
 
 ![](pdf_of_ein.png)
 
+由於
+$$
+\left.\begin{matrix}
+|E_{in}^{'} - E_{out}|\leq \frac{\epsilon}{2}\\\
+|E_{in}-E_{out}| \gt \epsilon
+\end{matrix}\right\}
+\Rightarrow
+|E_{in}-E_{in}^{'}| \gt \frac{\epsilon}{2}
+$$
+可以得到
 $$
 \frac{1}{2}\mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E_{out}(h) > \epsilon] \le \mathbb{P}[\exists h \in H \ s.t. | E_{in}(h) - E'_{in}(h)| > \frac{\epsilon}{2}]
 $$
