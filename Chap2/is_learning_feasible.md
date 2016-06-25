@@ -73,7 +73,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 **Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 **Effective Number of Lines**。
 
 ### Target
-目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 **Growth Function**
+目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 對應找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 **Growth Function**
 
 **Growth Function** m<sub>H</sub>(N) = max | H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) | ≤ 2<sup>N</sup>
 
@@ -111,7 +111,7 @@ B(N,K) = 2α + β (將 Bounding Function 裡的組合, 拆分為 α 表示 Dicho
 B(N,K) ≤ B(N-1,K) + B(N-1,K-1) (替換上式可得知)
 
 ![Bounding Function](https://c7.staticflickr.com/8/7396/27806904806_dc75eeba71.jpg)
-<center>(2D Perceptron Learning Algorithm)</center>
+<center>(以 2D Perceptron Learning Algorithm 為例)</center>
 
 透過以上關係式, 可以用數學歸納法證明以下不等式, 而 RHS 的最高項為 N<sup>k-1</sup>
 
