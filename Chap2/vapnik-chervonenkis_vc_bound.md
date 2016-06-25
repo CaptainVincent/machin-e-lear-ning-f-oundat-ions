@@ -8,5 +8,5 @@ $$
 ## Proof
 
 $$
-\mathbb{P}[\exists h \in H s.t. | E_{in} - E_{out} > \epsilon]
+\mathbb{P}[\exists h \in H s.t. | E_{in}(h) - E_{out}(h) > \epsilon]
 $$壞事情發生的機率實際上還存在一個 ∞ 個的變因, 那就是 $$E_{out}$$, 所以第一步我們要先替換掉 $$E_{out}$$
