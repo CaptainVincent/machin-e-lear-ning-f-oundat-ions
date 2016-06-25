@@ -104,7 +104,7 @@ $$m_{\mathcal{H}(N)}=\binom{N+1}{2} + 1 = \frac{1}{2}N^2 + \frac{1}{2}N + 1 $$ (
 
 B(N,K) = 2α + β (將 Bounding Function 裡的組合, 拆分為 α 表示 Dichotomy 中僅最末項不同的個數, β 是剩餘個數 兩種)
 
-α + β ≤ B(N-1,K) (為去掉最末項後 **僅** 留下不同的 Dichotomy 個數, 因為 B(N,K) 告訴我們任 K 項不 Shattered, 所以剩下的 Dichotomies 本身也不會 Shattered)
+α + β ≤ B(N-1,K) (為去掉最末項後 **僅** 留下不同的 Dichotomy 個數, 因為 B(N,K) 告訴我們任 K 項不 Shattered, 所以只要 N-1 >= K 時, 剩下的項本身也不會 Shattered)
 
 α ≤ B(N-1,K-1) (若任取 K-1 項會 Shattered = 2<sup>K-1</sup>, 則加上之前去掉的最末項 =  2<sup>K</sup>, 與 Bounding Function 定義衝突)
 
