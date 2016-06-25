@@ -74,11 +74,11 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 **Dichotomy** 指透過 Hypothesis 對所有 x (input data) 運算的結果, Dichotomies H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) 表示這些不同 **結果的集合**, 集合內個數上限稱為 **Effective Number of Lines**。
 
 ### Target
-目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 
+目標在於找到一個方法, 可以有效的將 ∞ 多個 Hypothesis 找到分類後的個數可以 << 2<sup>N</sup> (大於 2<sup>N</sup> 會讓 Top III 的不等式右項無法收斂), 而這個目標的關係式稱作 **Growth Function**
 
 **Growth Function** m<sub>H</sub>(N) = max | H(x<sub>1</sub>, x<sub>2</sub>, ... x<sub>N</sub>) | ≤ 2<sup>N</sup>
 
-**Break Point** 第一個資料點 K 使得 m<sub>H</sub> (K) < 2<sup>K</sup>, 在  K < N 皆會成立 (K 不一定存在, 但如果有 K 存在, 這個演算法的錯誤率)。
+**Break Point** 第一個資料點 K 使得 m<sub>H</sub> (K) < 2<sup>K</sup>, 在  K < N 皆會成立 (K 不一定存在, 但如果有 K 存在, 這個演算法的錯誤率似乎就有機會)。
 
 **Example**
 
