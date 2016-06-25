@@ -1,7 +1,6 @@
 # 機器學習可行嗎?
 最根本的現實是機器學習即便挑選的演算法以及假說設定的再好, 最終也只能代表 inside **D**ata 能有不錯的表現, 關於 outside **D**ata 的一切我們都是未知, 接下來就是探討對於現實我們是否能增加一些假設條件, 來對於這些未知的結果得到較為可靠的預測 (透過數學的工具)。
 
-
 ## Topic I (Hoeffding's Inequality)
 **Sample (取樣) 的代表性**, 假設取樣中某特徵呈現的機率為 ν, 而實際機率為 μ, 則兩者存在以下不等式的關係稱 Hoeffding's Inequality
 
@@ -135,4 +134,8 @@ B(N'+1,k) &\leq B(N',k) + B(N',k-1) \\\
 \end{aligned}
 $$
 
-所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅只是 upper bound), 而這個結果又可讓我們知道
+所以得知, 當 Break Point 存在時, 其 m<sub>H</sub>(K) 數量跟 N 的關係會是 polynomial N<sup>k-1</sup> (上式其實可以反向再證明 LHS = RHS, 不僅只是 upper bound), 而這個結果又讓我們知道當 Break Point 存在時, 挑選到錯誤的機率似乎是可以掌握的事。
+$$
+\mathbb{P}_\mathcal{D}[BAD\ D]\leq 2\cdot2m_{\mathcal{H}}(2 \cdot N)\cdot exp(-2 \cdot \frac{1}{16} \epsilon ^2N)
+$$完整的不等式如上, 中間替換的過程需要一些數學上的技巧推導, 並非直接將 M 以 $$m_{\mathcal{H}}$$ 取代, 下一節將繼續證明這個不等式。
+
