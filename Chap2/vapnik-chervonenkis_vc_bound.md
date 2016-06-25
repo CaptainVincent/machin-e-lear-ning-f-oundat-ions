@@ -10,3 +10,5 @@ $$
 $$
 \mathbb{P}[\exists h \in H s.t. | E_{in}(h) - E_{out}(h) > \epsilon]
 $$壞事情發生的機率實際上還存在一個 ∞ 個的變因, 那就是 $$E_{out}$$, 所以第一步我們要先替換掉 $$E_{out}$$, 這邊假設的是我們做驗證的時候, **D**ata 不再從無限大的 outside 取了, 而是從我們的另一組 N 個 input 的 **D'ata** 去取
+
+![](pdf_of_ein.png)
