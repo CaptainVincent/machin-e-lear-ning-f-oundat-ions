@@ -32,7 +32,7 @@ $$
 * d-D perceptron: $$d{vc} =^? d + 1$$
 
 ### Proof
-設計
+設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **x** 矩陣 (**x** 反矩陣存在 **invertible**)
 $$
 x =
  \left[
