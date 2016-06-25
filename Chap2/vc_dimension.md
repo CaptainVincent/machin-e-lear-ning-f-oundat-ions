@@ -30,3 +30,5 @@ $$
 * 1-D perceptron: $$d{vc} = 2$$
 * 2-D perceptron: $$d{vc} = 3$$
 * d-D perceptron: $$d{vc} =^? d + 1$$
+
+### Proof
