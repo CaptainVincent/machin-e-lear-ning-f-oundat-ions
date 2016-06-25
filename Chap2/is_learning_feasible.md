@@ -90,7 +90,7 @@ ex. 2D Perceptron, binary classification output y = {+1, -1}。
 
 **Conjecture 猜想**
 
-* No break point: m<sub>H</sub>(K) = 2<sup>N</sup> (Shattered)
+* No break point: m<sub>H</sub>(K) = 2<sup>N</sup> **(Shattered)**
 * Exist break point K: m<sub>H</sub>(K) = O(N<sup>K-1</sup>) 之後會證明
 
 **Proof**
