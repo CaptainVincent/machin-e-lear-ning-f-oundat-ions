@@ -6,6 +6,7 @@ $$
 這個章節要將 **壞事情發生的機率** 給出更為嚴謹的不等式 (上式) 來 bound 住。
 
 ## Proof
+[參考課程影片](https://www.youtube.com/watch?v=GcxpsIvR7t8&index=25&list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 
 $$
 \mathbb{P}[\exists h \in H s.t. | E_{in}(h) - E_{out}(h) > \epsilon]
