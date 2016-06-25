@@ -32,3 +32,25 @@ $$
 * d-D perceptron: $$d{vc} =^? d + 1$$
 
 ### Proof
+$$
+x =
+ \left[
+ \begin{matrix}
+   - x_1^T - \\
+   - x_2^T - \\
+   - x_3^T - \\
+   : \\
+   - x_{d+1}^T - 
+ \end{matrix}
+ \right]
+ =
+ \left[
+ \begin{matrix}
+   1&0&0&...&0 \\
+   1&1&0&...&0 \\
+   1&0&1&...&0 \\
+   : \\
+   1&0&0&...&1 \\
+ \end{matrix}
+ \right]
+$$
