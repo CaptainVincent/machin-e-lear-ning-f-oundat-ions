@@ -29,12 +29,11 @@ $$
 \begin{aligned}
 \ & \mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}] \\\
 \ & = \mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_1\ or\ BAD\ \mathcal{D}\ for\ h_2\ or\ ...\ or\ BAD\ \mathcal{D}\ for\ h_M]\\\
-\ & \leq \mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_1] + \mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_2]+...+\mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_M] \\\
+\ & \leq \mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_1] + \mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_2]+...+\mathbb{P}_{\mathcal{D}}[BAD\ \mathcal{D}\ for\ h_M] (union bound)\\\
 \ & \leq 2exp(-2\epsilon ^2N) + \leq 2exp(-2\epsilon ^2N) + ... + \leq 2exp(-2\epsilon ^2N) \\\
 \ & = 2Mexp(-2\epsilon ^2N)
 \end{aligned}
 $$
-
 
 **令有限 M 種的 Hypothesis**, 由 Topic I **Hoeffding's Inequality** 知道個別 Hypothesis 選中不好的資料 (E<sub>in</sub>(h)、E<sub>out</sub>(h) 相距很遠) 的機率不高, 所以 Σ <sub>(i=0~M) </sub>P<sub>D</sub>[BAD of D]≤ 2 M exp (-2ɛ<sup>2</sup>N), 可得知當
 
