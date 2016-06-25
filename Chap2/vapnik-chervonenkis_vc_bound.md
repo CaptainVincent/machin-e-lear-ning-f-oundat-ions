@@ -36,3 +36,6 @@ $$
 \end{aligned}
 $$
 這邊使用 $$m_{H}(2N)$$ 來表示兩次 (D and D') 抽出的 input, Hypothesis 可以將它們分類的種類上限有幾種, ... (證明待補)
+
+## Summary
+透過數學歸納法瞭解 Break Point 如何影響 Hyporthesis 上限函數 (Bounding Function), 然後導出這個多項式關係
