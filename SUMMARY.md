@@ -9,4 +9,5 @@
    * [Perceptron Learning Algorithm](Chap2/perceptron_learning_algorithm.md)
    * [Is Learning Feasible?](Chap2/is_learning_feasible.md)
    * [Vapnik-Chervonenkis (VC) bound](Chap2/vapnik-chervonenkis_vc_bound.md)
+   * VC Dimension
 
