@@ -32,9 +32,13 @@ $$
 * d-D perceptron: $$d{vc} =^? d + 1$$
 
 ### Proof
-設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **x** 矩陣 (**x** 反矩陣存在 **invertible**)
+
+##### Step 1. 證明 $$d_{vc} \ge d+1$$
+>證明的方式就是要證明當 **x** 為 d 維度時, d + 1 個 output 可以被 shattered
+
+設計一個特殊矩陣, 表示將 d+1 個 input 組成一個 **X** 矩陣 (**X** 反矩陣存在 **invertible**)
 $$
-x =
+X =
  \left[
  \begin{matrix}
    - x_1^T - \\
@@ -55,3 +59,8 @@ x =
  \end{matrix}
  \right]
 $$
+根據定義
+
+For any **y**, sign (**Xw**) = **y**, 那我們試著找一個 **w** 使得 **Xw** = **y**, 由前提知設計出的**X** 反矩陣存在, 所以 **w** = **X<sup>-1</sup>y** 也會存在, 得證存在某個 hypothesis **w** 使得任意 **y** 都可以被產生出來 (Shattered)。
+
+##### Step 2. 證明 $$d_{vc} \le d+1$$
