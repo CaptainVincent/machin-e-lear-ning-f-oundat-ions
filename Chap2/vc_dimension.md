@@ -115,4 +115,4 @@ $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) 
 
 透過上式可以了解, 並非一昧地追求 VC dimesion 愈大愈好, 而另一個使用 VC bound 的方式, 是用來侷限資料量 稱 Sample Complexity, 當今天目標鎖定了 $$\epsilon, \delta, d_{vc}$$ 我們究竟需要多少的 input 才能達到符合 $$\lt \delta$$ 的目標。
 
-> 但是通常 $$N\approx 10d_{vc}$$ 實務上已足夠。
+> 但是通常 $$N\approx 10d_{vc}$$ 實務上已足夠。(也隱含著 VC Bound 實際上是相當寬鬆不精準的上限)
