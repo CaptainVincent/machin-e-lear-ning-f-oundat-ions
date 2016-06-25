@@ -108,4 +108,10 @@ $$將右式定義為 $$\delta$$, 移項可得 $$\epsilon = \sqrt{\frac{8}{N}ln(\
 $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) \leq E_{in}(g)+\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})}$$
 
 重新定義 $$\Omega (N,\mathcal{H},\delta) = 上式的\ \sqrt{...}\ 項$$, 稱作 Penalty for Model Complexity
-* $$d_{vc} $$
+![](model_complexity_curve.png)
+* $$d_{vc} \uparrow: E_{in} \downarrow but\ \Omega\uparrow$$
+* $$d_{vc} \downarrow: E_{in} \uparrow but\ \Omega\downarrow$$
+* best $$d^*_{vc} in the middle$$
+
+
+N\approx 10d_{vc}
