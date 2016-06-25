@@ -49,7 +49,9 @@ E<sub>in</sub>(g) ≈ E<sub>out</sub>(g) is PAC 一樣會成立。
 
 延續上一個 Topic, ∞ 多個 Hypothesis 會讓 Topic III 不等式的 Upper Bound 沒有意義, 原因在於 Set 之中其實存在許多相似重疊的 Hypothesis, 它們造成挑選到錯誤機率的疊加效果過於放大 (使得 bound 太寬鬆), 接著我們要收斂 Set 裡的個數, 首先嘗試對 Hypothesis 做分類, 方法是從 **D**ata 的角度看待這些 Hypothesis 是將其歸類為何。
 
-**Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>), 透過分類後 Hypothesis 之後可得到 $\mathbb{P}[|E_{in}(g)-E_{out}(g)|\gt \epsilon]\leq 2\cdot effective(N)\cdot exp(-2\epsilon^2N)$
+**Effective Number of Lines** 定義為將 output 劃分不同種類的可能性 (≤ 2<sup>N</sup>), 透過分類後 Hypothesis 之後可得到
+
+$$\mathbb{P}[|E_{in}(g)-E_{out}(g)|\gt \epsilon]\leq 2\cdot effective(N)\cdot exp(-2\epsilon^2N)$$
 
 ex. 2D Perceptron, binary classification output y = {+1, -1}。
 
