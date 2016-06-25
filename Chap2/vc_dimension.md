@@ -61,4 +61,4 @@ X =
 $$
 根據定義
 
-For any **y**, sign (**Xw**) = **y**
+For any **y**, sign (**Xw**) = **y**, 因為 **X** 反矩陣存在, 所以 **w** = **X<sup>-1</sup>y**
