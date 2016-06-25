@@ -10,4 +10,7 @@ $$
 \end{aligned}
 $$
 ## 機器學習的條件
-* Good Hyporthesis
+* Good Hypothesis Set (有 Break Point)
+* Good Data (N 夠大)
+* Good Algorithm (可以挑到夠小的 $$E_{in}$$)
+* Good Luck
