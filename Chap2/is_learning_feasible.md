@@ -88,7 +88,7 @@ $$m_{\mathcal{H}(N)}=\binom{N+1}{2} + 1 = \frac{1}{2}N^2 + \frac{1}{2}N + 1 $$ (
 ![](positive_intervals.png)
 
 * **Growth Function for Convex Sets** (凸多邊形內的區域結果為正), 其中一種可能是將所有資料排成圓形, 並將結果為正的點連線成多邊形, 此時 2<sup>N</sup> 所有種排列皆可以產生, 因為 Growth Function 是取 max, 所以僅需要造出這組, 即可得知 Growth Function 為 $$m_{\mathcal{H}(N)}=2^N$$。
-> 這個任意挑選 N 個 input 卻可以造出 2<sup>N</sup> 個所有 output 排列組合的 case 稱作 **Shattered**。
+> 這個任意挑選 N 個 input 卻有可能造出 2<sup>N</sup> 個所有 output 排列組合的 case 稱作 **Shattered**。
 
 ![](convex_sets.png)
 
