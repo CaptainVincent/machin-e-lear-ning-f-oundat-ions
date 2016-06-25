@@ -23,15 +23,15 @@ h(x) = sign ( Σ <sub>(i=0~d)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<s
 
 ## 演算法
 
-If, sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) ≠ y<sub>n(t)</sub>
+Step1. If, sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) ≠ y<sub>n(t)</sub>
 
 > hypothesis 計算的結果於資料中的不符, y<sub>n(t)</sub> = {+1,-1}
 
-Let, **w**<sub>t+1</sub> = **w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>
+Step2. Let, **w**<sub>t+1</sub> = **w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>
 
 > 如果預期結果是正時, 因內積的兩個向量夾角過大才會是負, 所以修正方式是要往 **x** 方向靠近, 反之則要遠離 **x**
 
-Until no more mistakes.
+Step3. Until no more mistakes.
 
 <img src="2DPLA.jpg" width="237" height="218"/>
 
