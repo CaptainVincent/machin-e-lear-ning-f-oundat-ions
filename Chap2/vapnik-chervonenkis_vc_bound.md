@@ -6,6 +6,7 @@ $$
 這個章節要將 **壞事情發生的機率** 給出更為嚴謹的不等式 (上式) 來 bound 住。
 
 ## Proof
+[參考課程影片](https://www.youtube.com/watch?v=GcxpsIvR7t8&index=25&list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)
 
 $$
 \mathbb{P}[\exists h \in H s.t. | E_{in}(h) - E_{out}(h) > \epsilon]
@@ -38,7 +39,7 @@ $$
 這邊使用 $$m_{H}(2N)$$ 來表示兩次 (D and D') 抽出的 input, Hypothesis 可以將它們分類的種類上限有幾種, ... (證明待補)
 
 ## Summary
-透過數學歸納法瞭解 Break Point 如何影響 Hypothesis 上限函數 (Bounding Function), 然後導出這個多項式關係的數量, 看是否能以此取代 Hoeffding's Inequality 中的 M, 最終得到當滿足 Hypothesis 具有 Break Point 時, 都可以透過夠多的 input 來達到
+透過數學歸納法瞭解 Break Point 如何影響 Dichotomy 的上限函數 (Bounding Function), 然後導出這個多項式關係的數量, 看是否能以此取代 Hoeffding's Inequality 中的 M, 最終得到當滿足 Hypothesis 具有 Break Point 時, 都可以透過夠多的 input 來達到
 
 * 降低 $$E_{in}$$
-* 同時也使 E_{in} 與 E_{out} 接近
+* 同時也使 $$E_{in}$$ 與 $$E_{out}$$ 接近
