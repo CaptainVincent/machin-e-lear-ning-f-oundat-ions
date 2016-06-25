@@ -12,11 +12,11 @@ $$
 $$
 \begin{aligned}
 &\;\;\;\,\mathbb{P}[|E_{in}(g) - E_{out}(g)\gt \epsilon|] \\\
-&\leq \mathbb{P}[BAD]\\\
-&= \mathbb{P}[\exists h \in \mathcal{H}\text{ s.t. } |E_{in}(h)-E_{out}(h)|\gt \epsilon] \\\
+&= \mathbb{P}[BAD]\\\
+&\leq \mathbb{P}[\exists h \in \mathcal{H}\text{ s.t. } |E_{in}(h)-E_{out}(h)|\gt \epsilon] \\\
 &\leq 4m_{\mathcal{H}}(2N)exp(-\frac{1}{8}\epsilon^2N) \\\
 &\leq 4(2N)^{d_{vc}}exp(-\frac{1}{8}\epsilon^2N) \\\
-&\textit{( if }d_{vc}\textit{ is finite )}
+&\textit{( if }d_{vc}\textit{ is exists )}
 \end{aligned}
 $$
 
