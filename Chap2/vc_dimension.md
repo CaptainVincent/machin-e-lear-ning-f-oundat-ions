@@ -23,7 +23,7 @@ $$
 ## 機器學習的條件
 * Good Hypothesis Set (有 Break Point)
 * Good Data (N 夠大)
-* Good Algorithm (可以挑到夠小的 $$E_{in}$$)
+* Good Algorithm (可以挑到夠小 $$E_{in}$$ 的 Hypothesis)
 * Good Luck
 
 ## VC Dimension for d-D Perceptron 
