@@ -12,5 +12,5 @@
    * [VC Dimension](Chap2/vc_dimension.md)
    * [Noise and Error](Chap2/noise_and_error.md)
 * [How Can Machines Learn?](Chap3/how_can_machines_learn.md)
-   * Linear Regression
+   * [Linear Regression](Chap3/linear_regression.md)
 
