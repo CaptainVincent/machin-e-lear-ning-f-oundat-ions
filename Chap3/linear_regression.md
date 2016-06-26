@@ -54,4 +54,4 @@ y_3
 \end{aligned}
 $$
 
-目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum 
+目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum, 此函數可以推導 (課程中未證) 是連續(continuous)、可微(differentiable)、開口向上的凸函數(convex)
