@@ -26,10 +26,10 @@ Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)
 * out-sample: $$E_{out} = \epsilon \ error(g(x), f(x))$$, (x~P, x 同是機率分佈 P)
 
 Two important Pointwise Error Measures
-* 0/1 error, $$err(\widetilde{y}, y) = |\widetilde{y} \ne y|$$
-* squared error, $$err(\widetilde{y}, y) = (\widetilde{y} - y)^2$$
+* 0/1 error, $$err(\widetilde{y}, y) = |\widetilde{y} \ne y|$$ => minimum 'flipping noise'
+* squared error, $$err(\widetilde{y}, y) = (\widetilde{y} - y)^2$$ => minimum Gaussian noise
 
 > 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\widetilde{y}$$
 
 # Choice of Error Measure
-應用在不同場合底下, 對於錯誤的容忍也會給於不同的權重, 並非每種誤判都具有相同的代價,
+應用在不同場合底下, 對於錯誤的容忍也會給於不同的權重, 並非每種誤判都具有相同的代價。最好的方式是我們知道使用者心裡想要的 $$err$$, 使用它來求出 f, 但這通常很難做到, 所以退而求其次使用 $$\hat{err}$$ 代表一種已知的錯誤評估方式來評估, 又或者我們找得是一個好作最佳化的演算法, 很容易的可以改善我們的結果。
