@@ -25,6 +25,6 @@ Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)
 * in-sample: $$E_{in}(g) = \frac{1}{N} \sum_{n=1}^{N} err(g(x_n), f(x_n))$$, (沒有 noise 的話, $$f(x_n) = y_n$$)
 * out-sample: $$E_{out} = \epsilon \ error(g(x), f(x))$$, (x~P, x 同是機率分佈 P)
 
-err
+Two important Pointwise Error Measures
 * 0/1 error, $$err(\bar{y}, y) = |\bar{y}\ne y|$$
 * squared error, $$err(\bar{y}, y) = (\bar{y} - y)^2$$
