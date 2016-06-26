@@ -23,4 +23,4 @@ Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)
  使用 err 來表示 pointwise 的錯誤評估函數
  
  * in-sample: $$E_{in}(g) = \frac{1}{N} \sum_{n=1}^{N} err(g(x_n), f(x_n))$$ (沒有 noise 的話, $$f(x_n) = y_n$$)
- * out-sample: $$E_{out} = \epsilon \ error(g(x), f(x))$$ (x~P)
+ * out-sample: $$E_{out} = \epsilon \ error(g(x), f(x))$$ (x~P, x 同是機率分佈 P)
