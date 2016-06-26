@@ -32,3 +32,4 @@ Two important Pointwise Error Measures
 > 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\widetilde{y}$$
 
 # Choice of Error Measure
+應用在不同場合底下, 對於錯誤的容忍也會給於不同的權重, 並非每種誤判都具有相同的代價,
