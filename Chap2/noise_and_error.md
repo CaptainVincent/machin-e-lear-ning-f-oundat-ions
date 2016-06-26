@@ -15,7 +15,7 @@
 
 **Goal of Learing**
 
-Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)), 學習的目標在於從常見的 input 裡, 得到使錯誤發生的機率最低, 可以理解為追求 mini-target 的同時就是在使 $$E_{in}$$。
+Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)), 學習的目標在於從常見的 input 裡, 得到使錯誤發生的機率最低, 可以理解為追求 mini-target 的同時就是在使 $$E_{in}$$ 降低。
 
 ![](LearningFlowWithNoise.jpg)
 
@@ -36,4 +36,4 @@ Two important Pointwise Error Measures
 
 ###以 Binary Classification 為例
 
-使用 0/1 error
+使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ (2x2 )的組合不同權重, 稱作 Cost Matrix
