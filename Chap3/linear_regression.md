@@ -13,4 +13,9 @@ $$
 \begin{matrix}
 err(\hat{y}_n,y_n) = (\hat{y}_n-y_n)^2
 \end{matrix}
-$$How to minize $$E_{in}$$?
+$$
+我們可以得到 in-sample 的
+$$
+E_{in}(w)=\frac{1}{N}\sum_{n=1}^N(\hat{y}_n - y_n)^2=\frac{1}{N}\sum_{n=1}^N(w^Tx_n-y_n)^2
+$$
+How to minize $$E_{in}$$?
