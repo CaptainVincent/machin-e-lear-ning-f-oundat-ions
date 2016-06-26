@@ -93,7 +93,8 @@ $$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$ (恆成�
 所以至少有一種是無法被產生出來的 output, 那就是以上的 case 搭配上 $$y_{d+2}$$ < 0 (反證法得證)。
 
 ### Degrees of Freedom (自由度)
-
+![](degrees_freedom.jpg)
+VC dimension 代表的意思是 Hypothesis Set 裡的自由度, 雖然上面這些可控制的旋鈕 (假設是類比) 有無限多種組合, 但 $$D_{vc}$$ 是著眼真正有效的 (Effective Number of Lines) 種類有多少 (意涵對相同 input 可產生出不同結果)。
 
 
 ### 複雜度評估
