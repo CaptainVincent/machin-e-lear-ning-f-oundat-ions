@@ -9,3 +9,8 @@ $$h(x)=\sum_{i={0}}^d w_ix_i= w^Tx$$
 問題可以想像成是在求出一條/高維平面, 當 **x** 代入時可以與 $$y_n$$ 愈接近。 (紅色標出的距離稱作 residuals 餘數)
 ![](illustrationLR.jpg)
 這邊 Error Measure 是使用這個問題傳統常用的 **Squared**
+$$
+\begin{matrix}
+err(\hat{y}_n,y_n) = (\hat{y}_n-y_n)^2
+\end{matrix}
+$$
