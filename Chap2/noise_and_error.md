@@ -4,4 +4,4 @@
 
 之前數學推導的假設前提是 **x**<sub>n</sub> ~ P and y<sub>n</sub> = f (**x**<sub>n</sub>)
 
-但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y | **x**)取得
+但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y | **x**) 取得
