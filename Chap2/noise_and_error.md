@@ -30,3 +30,5 @@ Two important Pointwise Error Measures
 * squared error, $$err(\widetilde{y}, y) = (\widetilde{y} - y)^2$$
 
 > 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\widetilde{y}$$
+
+# Choice of Error Measure
