@@ -13,4 +13,4 @@ $$
 \begin{matrix}
 err(\hat{y}_n,y_n) = (\hat{y}_n-y_n)^2
 \end{matrix}
-$$
+$$How to minize $$E_{in}$$?
