@@ -19,3 +19,37 @@ $$
 E_{in}(w)=\frac{1}{N}\sum_{n=1}^N(\hat{y}_n - y_n)^2=\frac{1}{N}\sum_{n=1}^N(w^Tx_n-y_n)^2
 $$
 How to minize $$E_{in}$$?
+$$
+\begin{aligned}
+E_{in}(\color{blue}{w}) &= \frac{1}{N}\sum_{n=1}^{N}(\color{blue}{w^T}\color{red}{x_n}-\color{purple}{y_n})^2=\frac{1}{N}\sum_{n=1}^{N}(\color{red}{x_n^T}\color{blue}{w}-\color{purple}{y_n})^2 \\\
+
+&=\frac{1}{N}\begin{Vmatrix}
+\color{red}{x_1^T}\color{blue}{w}-\color{purple}{y_1}\\\
+\color{red}{x_2^T}\color{blue}{w}-\color{purple}{y_2}\\\
+...\\\
+\color{red}{x_N^T}\color{blue}{w}-\color{purple}{y_N}
+\end{Vmatrix}^2 \\\
+
+&=\frac{1}{N}\begin{Vmatrix}
+\color{red}{\begin{bmatrix}
+--x_1^T--\\\
+--x_2^T--\\\
+...\\\
+--x_N^T--
+\end{bmatrix}}
+\color{blue}{w} -
+\color{purple}{\begin{bmatrix}
+y_1\\\
+y_2\\\
+...\\\
+y_3
+\end{bmatrix}}
+\end{Vmatrix}^2 \\\
+
+&=\frac{1}{N}||
+\underbrace{\color{red}{X}}_{N\times d+1}\;\;\;
+\underbrace{\color{blue}{w}}_{d+1\times 1} \; - \;
+\underbrace{\color{purple}{y}}_{N\times 1}
+||^2
+\end{aligned}
+$$
