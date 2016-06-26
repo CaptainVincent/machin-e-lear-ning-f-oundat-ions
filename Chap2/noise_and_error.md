@@ -38,4 +38,12 @@ Two important Pointwise Error Measures
 
 使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ 可以形成 (2x2) 不同權重的組合, 稱作 Cost Matrix, 此 Matrix 仍舊可以代回去 pointwise 的 err 對 in/out-sample 做評估 稱作 **Weighted Classification**。
 
-**如何解這樣的問題**
+**如何解這樣的問題** ex.
+$$
+E_{in}^w(h)=\frac{1}{N}\sum_{n=1}^{N}
+\left\{\begin{matrix}
+1 & h(x_n)\neq y_n,y_n=+1 \\\
+1000 & h(x_n)\neq y_n,y_n=-1
+\end{matrix}\right.
+$$
+Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 **E_{in}^w(h)** 愈小的做修正
