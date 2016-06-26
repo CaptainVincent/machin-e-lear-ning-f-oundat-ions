@@ -46,4 +46,4 @@ E_{in}^w(h)=\frac{1}{N}\sum_{n=1}^{N}
 1000 & h(x_n)\neq y_n,y_n=-1
 \end{matrix}\right.
 $$
-Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 **E_{in}^w(h)** 愈小的做修正
+Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 **E_{in}^w(h)** 愈小的做修正, 這邊假造一組新的資料, 複製了加權種類的錯誤資料到權重數量, 因為新的資料在 pocket 演算法已知 $$E_{in}^{0/1}(h)$$ 可以修正,
