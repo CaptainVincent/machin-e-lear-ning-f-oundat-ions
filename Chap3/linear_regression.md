@@ -53,3 +53,5 @@ y_3
 ||^2
 \end{aligned}
 $$
+
+目標找到一個 w 使得 $$E_{in}$$ 可以是 minimum
