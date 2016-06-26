@@ -14,7 +14,7 @@ $$
 err(\hat{y}_n,y_n) = (\hat{y}_n-y_n)^2
 \end{matrix}
 $$
-我們可以得到 in-sample 的
+我們可以得到 in-sample
 $$
 E_{in}(w)=\frac{1}{N}\sum_{n=1}^N(\hat{y}_n - y_n)^2=\frac{1}{N}\sum_{n=1}^N(w^Tx_n-y_n)^2
 $$
