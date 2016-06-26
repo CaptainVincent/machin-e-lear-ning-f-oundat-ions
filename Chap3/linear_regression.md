@@ -1,7 +1,10 @@
 # Linear Regression
 
-Regression 討論的問題在於 output 是屬於 $$\mathbb{R}$$ 實數空間
+Linear Regression 討論的問題在於 output 是屬於 $$\mathbb{R}$$ 實數空間
 
-Linear Regression 的 Hypothesis (僅是其中一種設計方式)
+Linear Regression 的 Hypothesis (這僅是其中一種 H 的設計方式)
 
 $$h(x)=\sum_{i={0}}^d w_ix_i= w^Tx$$
+
+問題可以想像成是在求出一條/高維平面, 當 **x** 代入時可以與 $$y_n$$ 愈接近。
+![](illustrationLR.jpg)
