@@ -54,4 +54,4 @@ y_3
 \end{aligned}
 $$
 
-目標找到一個 w 使得 $$E_{in}$$ 可以是 minimum
+目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum 
