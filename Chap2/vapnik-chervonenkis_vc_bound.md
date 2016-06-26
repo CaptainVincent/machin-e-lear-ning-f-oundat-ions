@@ -39,7 +39,7 @@ $$
 這邊使用 $$m_{H}(2N)$$ 來表示兩次 (D and D') 抽出的 input, Hypothesis 可以將它們分類的種類上限有幾種, ... (證明待補)
 
 ## Summary
-透過數學歸納法瞭解 Break Point 如何影響 Dichotomy 的上限函數 (Bounding Function), 然後導出這個多項式關係的數量, 看是否能以此取代 Hoeffding's Inequality 中的 M, 最終得到當滿足 Hypothesis 具有 Break Point 時, 都可以透過夠多的 input 來達到
+雖然證明的部分尚未補完, 但在這裡我們先相信 VC bound 是已知且證明了, 那麼我們學到了什麼? 從一開始透過數學歸納法瞭解 Break Point 如何影響 Dichotomy 的上限函數 (Bounding Function), 然後知道這類的 Hypothesis 存在多項式關係的上限數量, 最後導回 Hoeffding's Inequality 中的 M, 得到當滿足 Hypothesis Set 具有 Break Point 時, 都可以透過夠多的 input 來達到 (**存在 Break Point** 且 **資料量夠多**)
 
 * 降低 $$E_{in}$$
 * 同時也使 $$E_{in}$$ 與 $$E_{out}$$ 接近

@@ -1,4 +1,4 @@
-# VC Dimensio# VC Dimension
+# VC Dimension
 VC Dimension ($$V_{dc}$$) = 'minimum K' -1
 
 ![](dc_dimension.jpg)
@@ -108,6 +108,9 @@ $$將右式定義為 $$\delta$$, 移項可得 $$\epsilon = \sqrt{\frac{8}{N}ln(\
 $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) \leq E_{in}(g)+\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})}$$
 
 重新定義 $$\Omega (N,\mathcal{H},\delta) = 上式的\ \sqrt{...}\ 項$$, 稱作 Penalty for Model Complexity (Model 是指 hypothesis, 而這個 penalty 就是指在我們要有多強的 Hypothesis Set 時, 所需付出的代價)
+
+> 筆者按：筆者的理解, 是說今天這個不等式觀察的角度如果將重心放中, 目標希望 $$\delta$$ 發生壞事情的機率降低到某個門檻, 此時 Learning Model 的 $$E_{in}$$ 與 $$E_{out}$$ 的距離關係。(只是將不等式鎖定的變量代換而已)
+
 ![](model_complexity_curve.png)
 * $$d_{vc} \uparrow: E_{in} \downarrow but\ \Omega\uparrow$$
 * $$d_{vc} \downarrow: E_{in} \uparrow but\ \Omega\downarrow$$
