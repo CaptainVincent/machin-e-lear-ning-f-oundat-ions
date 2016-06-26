@@ -6,6 +6,7 @@
 ### Deterministic v.s Probabilistic
 
 **Deterministic**
+
 之前數學推導的假設前提是 **x**<sub>n</sub> ~ P and y<sub>n</sub> = f (**x**<sub>n</sub>)
 
 **Probabilistic**
