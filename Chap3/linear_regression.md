@@ -7,8 +7,10 @@ Linear Regression 的 Hypothesis (這僅是其中一種 H 的設計方式)
 $$h(x)=\sum_{i={0}}^d w_ix_i= w^Tx$$
 
 問題可以想像成是在求出一條/高維平面, 當 **x** 代入時可以與 $$y_n$$ 愈接近。 (紅色標出的距離稱作 residuals 餘數)
+
 ![](illustrationLR.jpg)
-這邊 Error Measure 是使用這個問題傳統常用的 **Squared**
+
+這邊 Error Measure 是使用這個問題傳統上常用的 **Squared**
 $$
 \begin{matrix}
 err(\hat{y}_n,y_n) = (\hat{y}_n-y_n)^2
@@ -53,7 +55,6 @@ y_3
 ||^2
 \end{aligned}
 $$
-
 目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum, 此函數可以推導 (課程中未證) 是連續(continuous)、可微(differentiable)、開口向上的凸函數(convex), 而這個函數的最低點出現在梯度 = 0 (極值出現在往每個方向斜率 = 0), 此 w 稱作 $$w_{LIN}$$。
 $$
 \nabla E_{in}(\color{blue}{w}) \equiv
@@ -82,9 +83,9 @@ $$
 $$
 如果今天的 $$X^T X$$ 存在反矩陣, 梯度 = 0 移項之後, 可求得
 $$
-\color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\;\;\;\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
+\color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
 $$
-反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse。
+反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse (需參考線性代數裡的定義)。
 
 最後要預測 $$\hat{y}$$ 時, 代入 $$w_{LIN}$$
 $$
