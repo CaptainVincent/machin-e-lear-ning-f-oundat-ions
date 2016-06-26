@@ -17,4 +17,6 @@
 
 Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)), 學習的目標在於從常見的 input 裡, 得到使錯誤發生的機率最低。
 
+![](LearningFlowWithNoise.jpg)
+
 # Error Measure
