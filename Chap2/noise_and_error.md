@@ -11,7 +11,7 @@
 
 **Probabilistic**
 
-但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y|**x**) 取得 (解讀為當 **x** 發生時, y 發生的機率)
+但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y|**x**) 取得 (解讀為當 **x** 發生時, y 發生的機率), 在這樣的前提底下, VC bound 仍具有類似的效果。
 
 **Goal of Learing**
 
@@ -26,5 +26,9 @@ Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)
 * out-sample: $$E_{out} = \epsilon \ error(g(x), f(x))$$, (x~P, x 同是機率分佈 P)
 
 Two important Pointwise Error Measures
-* 0/1 error, $$err(\bar{y}, y) = |\bar{y}\ne y|$$
-* squared error, $$err(\bar{y}, y) = (\bar{y} - y)^2$$
+* 0/1 error, $$err(\widetilde{y}, y) = |\widetilde{y} \ne y|$$
+* squared error, $$err(\widetilde{y}, y) = (\widetilde{y} - y)^2$$
+
+> 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\widetilde{y}$$
+
+# Choice of Error Measure
