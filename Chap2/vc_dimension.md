@@ -1,4 +1,4 @@
-# VC Dimensio# VC Dimension
+# VC Dimension
 VC Dimension ($$V_{dc}$$) = 'minimum K' -1
 
 ![](dc_dimension.jpg)
