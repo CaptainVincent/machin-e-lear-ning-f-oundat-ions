@@ -130,7 +130,7 @@ $$\downarrow$$
 
 PLA can converge (推導出 $$cos\theta$$ 與 迭代次數 $$\sqrt{T}$$ 成正比) 
 
-$$\downarrow$$ (T enough large)
+$$\downarrow$$ (if T enough large)
 
 $$E_{in}(g) = 0$$
 
