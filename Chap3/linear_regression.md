@@ -83,7 +83,7 @@ $$
 $$
 \color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\;\;\;\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
 $$
-反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse。
+反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse (需參考線性代數裡的定義)。
 
 最後要預測 $$\hat{y}$$ 時, 代入 $$w_{LIN}$$
 $$
