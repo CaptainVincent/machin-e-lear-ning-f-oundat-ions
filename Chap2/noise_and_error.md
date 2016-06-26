@@ -36,4 +36,4 @@ Two important Pointwise Error Measures
 
 ###以 Binary Classification 為例
 
-使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ (2x2 )的組合不同權重, 稱作 Cost Matrix, 此 Matrix 仍舊可以代回去 pointwise 的 err 對 in/out-sample 做評估。
+使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ 可以形成 (2x2) 不同權重的組合, 稱作 Cost Matrix, 此 Matrix 仍舊可以代回去 pointwise 的 err 對 in/out-sample 做評估。
