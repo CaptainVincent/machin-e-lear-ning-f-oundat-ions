@@ -11,7 +11,7 @@
 
 **Probabilistic**
 
-但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y|**x**) 取得 (解讀為當 **x** 發生時, y 發生的機率), 在這樣的前提底下, VC bound 仍具有類似的效果。
+但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y|**x**) 取得 (解讀為當 **x** 發生時, y 發生的機率), 在這樣的前提底下, VC bound 仍具有類似的效果 (課程沒有證明)。
 
 **Goal of Learing**
 
