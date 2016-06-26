@@ -91,3 +91,5 @@ $$
 $$
 \hat{y}=\color{red}{X}\color{blue}{w_{LIN}}=\color{red}{XX^{\dagger}}\color{purple}{y}
 $$
+## 如何衡量 $$E_{in} \approx E_{out}$$
+這部分的 bound 證明有點難懂, 目前先略過。
