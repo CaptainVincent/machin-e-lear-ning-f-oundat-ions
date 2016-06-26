@@ -1,2 +1,2 @@
 # How Can Machines Learn?
-
+透過之前的章節, 我們已經瞭解到了機器學習上的一些 運作原理 以及 限制, 這邊做個 Summary, 從一開始的 Learning Model 出發, 假設我們的 input **x**  來自於一個機率函數產生 (inside 與 outside 皆是), 此時我們有了 Hoeffding's Inequality 延伸推導的 VC bound, 告訴我們機器學習訓練出來的誤差是會有上限的,
