@@ -142,7 +142,7 @@ with **x**<sub>n</sub> ~ P and y<sub>n</sub> = f (**x**<sub>n</sub>)
 
 $$\downarrow$$ 
 
-$$\mathbb{P}[|E_{in}(g) - E_{out}(g)\gt \epsilon|] \le ...$$ by $$d_{vc}$$ is finite 
+$$\mathbb{P}[|E_{in}(g) - E_{out}(g)\gt \epsilon|] \le ...$$ by $$d_{vc}$$ is finite (此章節推廣至 d-D perceptron 也成立)
 
 $$\downarrow$$  if N enough large
 
