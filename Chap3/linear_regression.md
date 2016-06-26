@@ -69,10 +69,7 @@ $$
 \color{orange}{0}
 \end{bmatrix}
 $$
-對 $$E_{in}(w)$$ 做展開後, 對 w 做偏微分
+對 $$E_{in}(w)$$ 做展開後, 再對 w 做偏微分
 $$
-\begin{aligned}
-\nabla E_{in}(\color{blue}{w}) &=\nabla \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty}) \\\
-&=\frac{2}{N}(\color{red}{X^TX}\color{blue}{w}-\color{brown}{X^Ty})
-\end{aligned}
+E_{in}(\color{blue}{w}) = \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty})
 $$
