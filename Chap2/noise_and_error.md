@@ -26,7 +26,7 @@ Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)
 * out-sample: $$E_{out} = \epsilon \ error(g(x), f(x))$$, (x~P, x 同是機率分佈 P)
 
 Two important Pointwise Error Measures
-* 0/1 error, $$err(\bar{y}, y) = |\bar{y}\ne y|$$
-* squared error, $$err(\bar{y}, y) = (\bar{y} - y)^2$$
+* 0/1 error, $$err(\widetilde{y}, y) = |\widetilde{y} \ne y|$$
+* squared error, $$err(\widetilde{y}, y) = (\widetilde{y} - y)^2$$
 
-> 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\bar{y}$$
+> 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\widetilde{y}$$
