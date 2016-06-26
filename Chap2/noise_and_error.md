@@ -47,4 +47,5 @@ E_{in}^w(h)=\frac{1}{N}\sum_{n=1}^{N}
 \end{matrix}\right.
 $$
 **Systematic Route (Called 'reduction')**
+
 Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 $$E_{in}^w(h)$$ 往愈小的做修正, 但怎麼知道這演算法可用? 這邊假造一組新的資料, 複製了 **需要加權種類的錯誤資料** 到權重數量筆, 因為已知 pocket 演算法可以使用 $$E_{in}^{0/1}(h)$$ 修正 $$g \approx f$$ (即便作用在新的資料群), 得知使用舊資料找更小的 $$E_{in}^w(h)$$
