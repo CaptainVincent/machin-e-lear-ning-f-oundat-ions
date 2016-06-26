@@ -28,3 +28,5 @@ Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)
 Two important Pointwise Error Measures
 * 0/1 error, $$err(\bar{y}, y) = |\bar{y}\ne y|$$
 * squared error, $$err(\bar{y}, y) = (\bar{y} - y)^2$$
+
+> 使用不同的 err, 會造成最後的 mini-target 挑選到不同的 $$\bar{y}$$
