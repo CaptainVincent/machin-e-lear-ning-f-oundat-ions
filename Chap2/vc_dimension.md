@@ -92,14 +92,11 @@ $$w^Tx_{d+2} = a_1w^Tx_1 + a_2w^Tx_2 + ... + a_{d+1}w^Tx_{d+1} \gt 0$$ (恆成�
 
 所以至少有一種是無法被產生出來的 output, 那就是以上的 case 搭配上 $$y_{d+2}$$ < 0 (反證法得證)。
 
-###
+### Degrees of Freedom (自由度)
 
-## Homework 補充
-[證明參考](http://beader.me/mlnotebook/section2/vc-dimension-three.html)
 
-$$d_{vc}(\cup_{k=1}^{K}\mathcal{H}_k) = d_{vc}(\mathcal{H}_1)+d_{vc}(\mathcal{H}_2)+ K - 1$$
 
-## 複雜度評估
+### 複雜度評估
 $$
 \begin{aligned}
 \mathbb{P}[BAD] &= \mathbb{P}[\exists h \in \mathcal{H}\text{ s.t. } |E_{in}(h)-E_{out}(h)|\gt \epsilon] \\\
@@ -123,3 +120,13 @@ $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) 
 > $$\epsilon = 0.1$$, $$\delta = 0.1, $$ $$d_{vc} = 3$$, 迭代不同的 $$d_{vc}$$ 所求出的關係式 $$N\approx 10,000d_{vc}$$
 >
 > 但是通常 $$N\approx 10d_{vc}$$ 實務上已足夠。(也隱含著 VC Bound 實際上是相當寬鬆不精準的上限)
+
+## Summary
+目前透過數學工具的推導, 我們了解到了兩件事情
+Linearly Separable **D**ata $$\rightarrow$$ PLA can converge
+
+
+## Homework 補充
+[證明參考](http://beader.me/mlnotebook/section2/vc-dimension-three.html)
+
+$$d_{vc}(\cup_{k=1}^{K}\mathcal{H}_k) = d_{vc}(\mathcal{H}_1)+d_{vc}(\mathcal{H}_2)+ K - 1$$
