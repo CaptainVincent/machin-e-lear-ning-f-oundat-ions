@@ -36,7 +36,7 @@ Two important Pointwise Error Measures
 
 ### 以 Binary Classification 為例
 
-使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ 可以形成 (2x2) 不同權重的組合, 稱作 Cost Matrix, 此 Matrix 仍舊可以代回去 pointwise 的 err 對 in/out-sample 做評估 稱作 **Weighted Classification**。
+使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ 可以形成 (2x2) 不同權重的組合, 稱作 Cost Matrix, 此 Matrix 仍舊可以代回去 pointwise 的 err 對 in/out-sample 做評估 稱作 **Weighted Classification** (如下例子)。
 
 **如何解這樣的問題** ex.
 $$
@@ -46,4 +46,4 @@ E_{in}^w(h)=\frac{1}{N}\sum_{n=1}^{N}
 1000 & h(x_n)\neq y_n,y_n=-1
 \end{matrix}\right.
 $$
-Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 **E_{in}^w(h)** 愈小的做修正, 這邊假造一組新的資料, 複製了加權種類的錯誤資料到權重數量, 因為新的資料在 pocket 演算法已知 $$E_{in}^{0/1}(h)$$ 可以修正,
+Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 **E_{in}^w(h)** 往愈小的做修正, 但怎麼知道這演算法可用? 這邊假造一組新的資料, 複製了 **需要加權種類的錯誤資料** 到權重數量筆, 因為新的資料在 pocket 演算法已知 $$E_{in}^{0/1}(h)$$ 可以修正,
