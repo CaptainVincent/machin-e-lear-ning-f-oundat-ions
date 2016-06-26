@@ -124,21 +124,31 @@ $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) 
 ## Summary
 目前透過數學工具的推導, 我們了解到了兩件事情
 
+#### 第一件事
 Linearly Separable **D**ata 
 
 $$\downarrow$$ 
 
 PLA can converge (推導出 $$cos\theta$$ 與 迭代次數 $$\sqrt{T}$$ 成正比) 
 
-$$\downarrow$$ (if T enough large)
+$$\downarrow$$ if T enough large
 
 $$E_{in}(g) = 0$$
 
-另一件事 
 
+#### 第二件事
 with **x**<sub>n</sub> ~ P and y<sub>n</sub> = f (**x**<sub>n</sub>)
 
+$$\downarrow$$ 
+
 $$\mathbb{P}[|E_{in}(g) - E_{out}(g)\gt \epsilon|] \le ...$$ by $$d_{vc}$$ is finite 
+
+$$\downarrow$$  if N enough large
+
+$$E_{in}(g) \approx E_{out}(g)$$
+
+#### 綜合以上兩件事
+$$E_{out}(g) \approx 0$$
 
 ## Homework 補充
 [證明參考](http://beader.me/mlnotebook/section2/vc-dimension-three.html)
