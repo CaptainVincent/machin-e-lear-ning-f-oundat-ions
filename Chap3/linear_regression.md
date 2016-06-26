@@ -54,4 +54,18 @@ y_3
 \end{aligned}
 $$
 
-目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum, 此函數可以推導 (課程中未證) 是連續(continuous)、可微(differentiable)、開口向上的凸函數(convex)
+目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum, 此函數可以推導 (課程中未證) 是連續(continuous)、可微(differentiable)、開口向上的凸函數(convex), 而這個函數的最低點
+$$
+E_{in}(\color{blue}{w}) \equiv
+\begin{bmatrix}
+\frac{\partial E_{in}}{\partial \color{blue}{w}_0}(\color{blue}{w})\\\
+\frac{\partial E_{in}}{\partial \color{blue}{w}_1}(\color{blue}{w})\\\
+...\\\
+\frac{\partial E_{in}}{\partial \color{blue}{w}_d}(\color{blue}{w})
+\end{bmatrix}=\begin{bmatrix}
+\color{orange}{0}\\\
+\color{orange}{0}\\\
+...\\\
+\color{orange}{0}
+\end{bmatrix}
+$$
