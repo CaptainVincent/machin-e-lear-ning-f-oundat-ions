@@ -15,7 +15,7 @@
 
 **Goal of Learing**
 
-Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)), 學習的目標在於從常見的 input 裡, 得到使錯誤發生的機率最低。
+Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**)), 學習的目標在於從常見的 input 裡, 得到使錯誤發生的機率最低, 可以理解為追求 mini-target 的同時就是在使 $$E_{in}$$ 降低。
 
 ![](LearningFlowWithNoise.jpg)
 
@@ -33,3 +33,22 @@ Two important Pointwise Error Measures
 
 # Choice of Error Measure
 應用在不同場合底下, 對於錯誤的容忍也會給於不同的權重, 並非每種誤判都具有相同的代價。最好的方式是我們知道使用者心裡想要的 $$err$$, 使用它來求出 f, 但這通常很難做到, 所以退而求其次使用 $$\hat{err}$$ 代表一種已知的錯誤評估方式來評估 (**plausible**), 又或者我們找得是一個好作最佳化的演算法, 很容易的可以改善我們要的結果 (**friendly**)。
+
+### 以 Binary Classification 為例
+
+使用 0/1 error 列舉 $$y_n$$ 與 $$h(x)$$ 可以形成 (2x2) 不同權重的組合, 稱作 Cost Matrix, 此 Matrix 仍舊可以代回去 pointwise 的 err 對 in/out-sample 做評估 稱作 **Weighted Classification** (如下例子)。
+
+**如何解這樣的問題** ex.
+$$
+E_{in}^w(h)=\frac{1}{N}\sum_{n=1}^{N}
+\left\{\begin{matrix}
+1 & h(x_n)\neq y_n,y_n=+1 \\\
+1000 & h(x_n)\neq y_n,y_n=-1
+\end{matrix}\right.
+$$
+**Systematic Route (Called 'reduction')**
+
+Connect $$E_{in}^w(h)$$ and $$E_{in}^{0/1}(h)$$, 新的演算法是找 $$E_{in}^w(h)$$ 往愈小的做修正, 但怎麼知道這演算法可用? 這邊假造一組新的資料, 複製了 **需要加權種類的錯誤資料** 到權重數量筆, 因為已知 pocket 演算法可以使用 $$E_{in}^{0/1}(h)$$ 修正 $$g \approx f$$ (即便作用在新的資料群)。綜合以上假設得知
+
+* weighted PLA: 拜訪權重高結果的機率要增加到權重倍數
+* weighted pocket replacement: 替換 $$w_{t+1}$$ 可以使用 $$E_{in}^w(h)$$ 是否更小來判斷
