@@ -126,7 +126,7 @@ $$E_{in}(g)-\sqrt{\frac{8}{N}ln(\frac{4(2N)^{d_{vc}}}{\delta})} \leq E_{out}(g) 
 
 Linearly Separable **D**ata $$\rightarrow$$ PLA can converge (推導出 $$cos\theta$$ 與 迭代次數 $$\sqrt{T}$$ 成正比) $$\overrightarrow{\ T large\ }$$ $$E_{in}(g) = 0$$
 
-另一件事
+另一件事 with **x**<sub>n</sub>
 
 
 
