@@ -11,5 +11,5 @@
    * [Vapnik-Chervonenkis (VC) bound](Chap2/vapnik-chervonenkis_vc_bound.md)
    * [VC Dimension](Chap2/vc_dimension.md)
    * [Noise and Error](Chap2/noise_and_error.md)
-* How Can Machines Learn?
+* [How Can Machines Learn?](Chap3/how_can_machines_learn.md)
 
