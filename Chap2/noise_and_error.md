@@ -33,3 +33,5 @@ Two important Pointwise Error Measures
 
 # Choice of Error Measure
 應用在不同場合底下, 對於錯誤的容忍也會給於不同的權重, 並非每種誤判都具有相同的代價。最好的方式是我們知道使用者心裡想要的 $$err$$, 使用它來求出 f, 但這通常很難做到, 所以退而求其次使用 $$\hat{err}$$ 代表一種已知的錯誤評估方式來評估 (**plausible**), 又或者我們找得是一個好作最佳化的演算法, 很容易的可以改善我們要的結果 (**friendly**)。
+
+###以 Binary Classification 為例
