@@ -54,9 +54,9 @@ y_3
 \end{aligned}
 $$
 
-目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum, 此函數可以推導 (課程中未證) 是連續(continuous)、可微(differentiable)、開口向上的凸函數(convex), 而這個函數的最低點
+目標找到一個 w 使得 $$E_{in}(w)$$ 可以是 minimum, 此函數可以推導 (課程中未證) 是連續(continuous)、可微(differentiable)、開口向上的凸函數(convex), 而這個函數的最低點出現在梯度 = 0 (極值出現在往每個方向斜率 = 0), 此 w 稱作 $$w_{LIN}$$。
 $$
-E_{in}(\color{blue}{w}) \equiv
+\nabla E_{in}(\color{blue}{w}) \equiv
 \begin{bmatrix}
 \frac{\partial E_{in}}{\partial \color{blue}{w}_0}(\color{blue}{w})\\\
 \frac{\partial E_{in}}{\partial \color{blue}{w}_1}(\color{blue}{w})\\\
@@ -68,4 +68,25 @@ E_{in}(\color{blue}{w}) \equiv
 ...\\\
 \color{orange}{0}
 \end{bmatrix}
+$$
+對 $$E_{in}(w)$$ 做展開後
+$$
+E_{in}(\color{blue}{w}) = \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty})
+$$
+再對 w 做偏微分
+$$
+\begin{aligned}
+\nabla E_{in}(\color{blue}{w}) &=\nabla \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty}) \\\
+&=\frac{2}{N}(\color{red}{X^TX}\color{blue}{w}-\color{brown}{X^Ty})
+\end{aligned}
+$$
+如果今天的 $$X^T X$$ 存在反矩陣, 梯度 = 0 移項之後, 可求得
+$$
+\color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\;\;\;\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
+$$
+反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse。
+
+最後要預測 $$\hat{y}$$ 時, 代入 $$w_{LIN}$$
+$$
+\hat{y}=\color{red}{X}\color{blue}{w_{LIN}}=\color{red}{XX^{\dagger}}\color{purple}{y}
 $$
