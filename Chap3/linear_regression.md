@@ -78,7 +78,8 @@ $$
 \nabla E_{in}(\color{blue}{w}) &=\nabla \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty}) \\\
 &=\frac{2}{N}(\color{red}{X^TX}\color{blue}{w}-\color{brown}{X^Ty})
 \end{aligned}
-$$如果今天的 $$X^T X$$ 存在反矩陣, 梯度 = 0 移項之後, 可求得
+$
+$如果今天的 $$X^T X$$ 存在反矩陣, 梯度 = 0 移項之後, 可求得
 $$
 \color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\;\;\;\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
 $$
