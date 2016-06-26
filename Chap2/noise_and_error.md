@@ -7,8 +7,12 @@
 
 **Deterministic**
 
-之前數學推導的假設前提是 **x**<sub>n</sub> ~ P and y<sub>n</sub> = f (**x**<sub>n</sub>)
+之前數學推導的假設前提是 **x**<sub>n</sub> ~ P and y<sub>n</sub> = f (**x**<sub>n</sub>), 假設目標函數的存在
 
 **Probabilistic**
 
 但今天我們不再將 y 的產生是透過目標函數 f 來, 而是透過 Target Distribution 的機率函數 P(y|**x**) 取得 (解讀為當 **x** 發生時, y 發生的機率)
+
+**Goal of Learing**
+
+Predict ideal mini-target (w.r.t P(y|**x**)) on often-seen input (w.r.t P(**x**))
