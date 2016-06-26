@@ -82,4 +82,4 @@ $$如果今天的 $$X^T X$$ 存在反矩陣, 梯度 = 0 移項之後, 可求得
 $$
 \color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\;\;\;\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
 $$
-反矩陣不存在時, 會有多組解, 有其他方式可以求出其 psedu-inverse。
+反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse。
