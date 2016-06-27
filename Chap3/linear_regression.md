@@ -120,4 +120,4 @@ E_{in}(\color{blue}{w_{LIN}})&=\frac{1}{N}||\color{green}{y-\hat{y}}||^2\\\
 &=\frac{1}{N}(N-(d+1))||noise||^2
 \end{aligned}
 $$
-$$\overline{E_{in}} = \text{noise level}\cdot(1-\frac{d+1}{N})$$ (這邊 noise level 是後面 $$\lVert noise \rVert^2$$ 的平均, 前面係數是已知固定的)
+$$\overline{E_{in}} = \text{noise level}\cdot(1-\frac{d+1}{N})$$ (這邊 noise level 是後面 $$\lVert noise \rVert^2$$ 的平均, 其他係數是已知固定的)
