@@ -85,11 +85,13 @@ $$
 $$
 \color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
 $$
-反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse (需參考線性代數裡的定義)。
+當反矩陣不存在時, 會有存在多組解, 有其他方式可以求出其 psedu-inverse (需參考線性代數裡的定義)。
 
 最後要預測 $$\hat{y}$$ 時, 代入 $$w_{LIN}$$
 $$
 \hat{y}=\color{red}{X}\color{blue}{w_{LIN}}=\color{red}{XX^{\dagger}}\color{purple}{y}
-$$
+$$ 
+這裡又稱 $$\color{red}{XX^{\dagger}}$$ 為 Hat Matrix $$\color{orange}{H}$$, 將 y 戴帽子
+
 ## 如何衡量 $$E_{in} \approx E_{out}$$
-這部分的 bound 證明有點難懂, 目前先略過。
+這部分的 bound 證明有點難懂, 目前先略過。 
