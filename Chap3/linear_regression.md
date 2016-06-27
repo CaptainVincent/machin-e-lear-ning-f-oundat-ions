@@ -76,7 +76,7 @@ $$
 $$
 E_{in}(\color{blue}{w}) = \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty})
 $$
-再對 w 做偏微分
+再對 w 做偏微分 (這部分的推導也需要再翻翻線性代數、向量分析的資料才行)
 $$
 \begin{aligned}
 \nabla E_{in}(\color{blue}{w}) &=\nabla \frac{1}{N}(\color{blue}{w^T}\color{red}{X^TX}\color{blue}{w}-2\color{blue}{w^T}\color{brown}{X^Ty}+\color{purple}{y^Ty}) \\\
