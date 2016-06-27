@@ -83,7 +83,7 @@ $$
 &=\frac{2}{N}(\color{red}{X^TX}\color{blue}{w}-\color{brown}{X^Ty})
 \end{aligned}
 $$
-如果今天的 $$X^T X$$ 存在反矩陣, 梯度 = 0 移項之後, 可求得
+如果今天的 $$X^T X$$ 存在反矩陣, 令梯度 = 0 移項之後, 可求得
 $$
 \color{blue}{w_{LIN}}=\underbrace{(\color{red}{X^TX})^{-1}\color{red}{X^T}}_{pseudo-inverse\;\color{red}{X^{\dagger}}}\color{purple}{y} = \color{red}{X^{\dagger}} \color{purple}{y}
 $$
@@ -99,4 +99,7 @@ $$
 前半段的證明在於我們可以透過矩陣運算 (內含求反矩陣的迭代), 可以求出最小的 $$E_{in}$$, 而關於 Linear Regression 後半部分的證明, 主要在於如何保證 $$E_{in} \approx E_{out}$$ 
 
 * 第一種方式, 是建立在之前 VC dimension 哲學上的意涵, 我們今天的演算法也只存在 D 個維度的變量, 所以理論上我們的 $$d_{vc}$$ 會是 finite, 只要是 finite 則會保證當 N 夠大時, $$E_{in} \approx E_{out}$$
-* 第二種方式,
+* 第二種方式, 是求出 $$\bar{E_{in}}$$ 與 $$\bar{E_{out}}$$ 的關係
+![](geoview_hatmatrix.png)
+
+從幾何上的意義, $$\hat{y} = Xw$$, 在求出 $$w_{LIN}$$ 之前, 我們可能會代入任意的 $$w$$, 也就是對 X 的 column (相當於 D+1 筆 的N+1 維 向量)做任意的線性組合,
