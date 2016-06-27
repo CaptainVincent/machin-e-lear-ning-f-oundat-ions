@@ -99,7 +99,7 @@ $$
 前半段的證明在於我們可以透過矩陣運算 (內含求反矩陣的迭代), 可以求出最小的 $$E_{in}$$, 而關於 Linear Regression 後半部分的證明, 主要在於如何保證 $$E_{in} \approx E_{out}$$ 
 
 * 第一種方式, 是建立在之前 VC dimension 哲學上的意涵, 我們今天的演算法也只存在 D 個維度的變量, 所以理論上我們的 $$d_{vc}$$ 會是 finite, 只要是 finite 則會保證當 N 夠大時, $$E_{in} \approx E_{out}$$
-* 第二種方式, 是求出 $$\bar{E_{in}}$$ 與 $$\bar{E_{out}}$$ 的關係
+* 第二種方式, 是求出 $$\overline{E_{in}}$$ 與 $$\overline{E_{out}}$$ 的關係
 
 首先先觀察 $$E_{in} = \frac{1}{N}\lVert y-\hat{y}\rVert^2 = (I-\color{orange}{H})\color{purple}{y}$$
 
@@ -111,7 +111,7 @@ $$
 
 ![](geoview_hatmatrix_noise.png)
 
-理想的 target function f 存在的話, f(x) ∈ span of X
+理想的 target function f 存在的話, f(x) ∈ span of X, 則 y = f(X) + noise, 則 $$E_{in}$$ 可以表示如下
 $$
 \begin{aligned}
 E_{in}(\color{blue}{w_{LIN}})&=\frac{1}{N}||\color{green}{y-\hat{y}}||^2\\\
@@ -120,3 +120,4 @@ E_{in}(\color{blue}{w_{LIN}})&=\frac{1}{N}||\color{green}{y-\hat{y}}||^2\\\
 &=\frac{1}{N}(N-(d+1))||noise||^2
 \end{aligned}
 $$
+$$\overline{E_{in}} = \text{noise level}\cdot(1-\frac{d+1}{N})$$ (這邊 noise level 是後面 $$\lVert noise \rVert^2$$ 的平均, 前面係數是已知固定的)
