@@ -13,5 +13,5 @@
    * [Noise and Error](Chap2/noise_and_error.md)
 * [How Can Machines Learn?](Chap3/how_can_machines_learn.md)
    * [Linear Regression](Chap3/linear_regression.md)
-   * Linear Classification vs. Linear Regression
+   * [Linear Classification vs. Linear Regression](Chap3/linear_classification_vs_linear_regression.md)
 
