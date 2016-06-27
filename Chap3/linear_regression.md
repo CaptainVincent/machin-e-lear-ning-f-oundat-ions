@@ -105,4 +105,4 @@ $$
 
 ![](geoview_hatmatrix.png)
 
-從幾何上的意義, $$\hat{y} = Xw$$, 在求出 $$w_{LIN}$$ 之前, 我們可能會代入任意的 $$w$$, 也就是對 X 的 column (相當於 D+1 筆 的N+1 維 向量)做任意的線性組合, 這些組合的結果會 ∈ span of X, 而這中間最小的就是 $$\color{green}{y-\hat{y}}\perp \color{red}{span}$$。
+從幾何上的意義, $$\hat{y} = Xw$$, 在求出 $$w_{LIN}$$ 之前, 我們可能會代入任意的 $$w$$, 也就是對 X 的 column (相當於 D+1 筆 的 N+1 維 向量)做任意的線性組合, 這些組合的結果會 ∈ span of X, 而這中間最小的就是 $$\color{green}{y-\hat{y}}\perp \color{red}{span}$$。
