@@ -112,3 +112,11 @@ $$
 ![](geoview_hatmatrix_noise.png)
 
 理想的 target function f 存在的話, f(x) ∈ span of X
+$$
+\begin{aligned}
+E_{in}(\color{blue}{w_{LIN}})&=\frac{1}{N}||\color{green}{y-\hat{y}}||^2\\\
+&=\frac{1}{N}||(I-\color{orange}{H})noise||^2 \\\
+&=\frac{1}{N}trace(I-\color{orange}{H})||noise||^2 \\\
+&=\frac{1}{N}(N-(d+1))||noise||^2
+\end{aligned}
+$$
