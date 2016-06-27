@@ -101,8 +101,10 @@ $$
 * 第一種方式, 是建立在之前 VC dimension 哲學上的意涵, 我們今天的演算法也只存在 D 個維度的變量, 所以理論上我們的 $$d_{vc}$$ 會是 finite, 只要是 finite 則會保證當 N 夠大時, $$E_{in} \approx E_{out}$$
 * 第二種方式, 是求出 $$\bar{E_{in}}$$ 與 $$\bar{E_{out}}$$ 的關係
 
-首先先觀察 $$E_{in} = \frac{1}{N}\lVert y-\hat{y}\rVert^2$$
+首先先觀察 $$E_{in} = \frac{1}{N}\lVert y-\hat{y}\rVert^2 = (I-\color{orange}{H})\color{purple}{y}$$
 
 ![](geoview_hatmatrix.png)
 
 從幾何上的意義, $$\hat{y} = Xw$$, 在求出 $$w_{LIN}$$ 之前, 我們可能會代入任意的 $$w$$, 也就是對 X 的 column (相當於 D+1 筆 的 N+1 維 向量)做任意的線性組合, 這些組合的結果會 ∈ span of X, 而這中間最小的就是 $$\color{green}{y-\hat{y}}\perp \color{red}{span}$$。
+
+> Claim: trace(I-H) = N - (d+1)
