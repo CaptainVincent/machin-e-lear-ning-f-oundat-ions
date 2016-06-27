@@ -120,4 +120,13 @@ E_{in}(\color{blue}{w_{LIN}})&=\frac{1}{N}||\color{green}{y-\hat{y}}||^2\\\
 &=\frac{1}{N}(N-(d+1))||noise||^2
 \end{aligned}
 $$
-$$\overline{E_{in}} = \text{noise level}\cdot(1-\frac{d+1}{N})$$ (這邊 noise level 是後面 $$\lVert noise \rVert^2$$ 的平均, 其他係數是已知固定的)
+底下是用上面的假設導出的式子, 筆者時間有限, 先用相信我之術帶過...
+
+$$\overline{E_{in}} = \text{noise level}\cdot(1-\frac{d+1}{N})$$
+
+$$\overline{E_{out}} = \text{noise level}\cdot(1+\frac{d+1}{N})$$
+
+最後對這兩個函數可以畫出一張圖稱做 Learning Curve
+![](linear_regression_learning_curve.png)
+
+如圖所示也如同 VC bound 所要告訴我們的事, 當資料量夠大時,  $$\overline{E_{in}}$$ 與 $$\overline{E_{out}}$$ 會愈來愈近, 往 noise level ($$\sigma^2$$)靠近
