@@ -96,4 +96,6 @@ $$
 這裡又稱 $$\color{red}{XX^{\dagger}}$$ 為 Hat Matrix $$\color{orange}{H}$$, 將 y 戴帽子
 
 ## 如何衡量 $$E_{in} \approx E_{out}$$
-這部分的 bound 證明有點難懂, 目前先略過。 
+前半段的證明在於我們可以透過矩陣運算 (內含求反矩陣的迭代), 可以求出最小的 $$E_{in}$$, 而關於 Linear Regression 後半部分的證明, 主要在於如何保證 $$E_{in} \approx E_{out}$$ 
+
+* 第一種方式, 是建立在之前 VC dimension 哲學上的意涵, 我們今天的演算法也只存在 D 個維度的變量, 所以理論上我們的 $$d_{vc}$$ 會是 finite, 只要是 finite 則會保證當 N 夠大時, $$E_{in} \approx E_{out}$$
