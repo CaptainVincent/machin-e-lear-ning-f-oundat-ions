@@ -129,4 +129,4 @@ $$\overline{E_{out}} = \text{noise level}\cdot(1+\frac{d+1}{N})$$
 最後對這兩個函數可以畫出一張圖稱做 Learning Curve
 ![](linear_regression_learning_curve.png)
 
-如圖所示也如同 VC bound 所要告訴我們的事, 當資料量夠大時,  $$\overline{E_{in}}$$ 與 $$\overline{E_{out}}$$ 會愈來愈近, 往 noise level ($$\sigma^2$$)靠近
+如圖所示也如同 VC bound 所要告訴我們的事, 當資料量夠大時,  $$\overline{E_{in}}$$ 與 $$\overline{E_{out}}$$ 會愈來愈近, 往 noise level ($$\sigma^2$$) 靠近。
