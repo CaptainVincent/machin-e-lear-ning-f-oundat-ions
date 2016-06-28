@@ -23,7 +23,7 @@ $$
 * s = $$\infty$$, $$\theta(\infty) = 1$$
 * s = $$-\infty$$, $$\theta(-\infty) = 0$$
 
-這是一個 smooth(平滑, 可微), monotonic(單調, 嚴格遞增), sigmoid (S形) 的函數, 到這裡我們已經設計出了一個符合 logistic regression 問題的 Hypothesis Set
+這是一個 smooth(平滑, 可微), monotonic(單調, 嚴格遞增), sigmoid (S形) 的函數, 到這裡我們已經設計出了一個符合 logistic regression 問題的 Hypothesis Set (**logistic hypothsis**)
 
 $$h(x) = \frac{1}{1+exp(-W^\intercal x)}$$
 
