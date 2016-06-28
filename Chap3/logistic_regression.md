@@ -8,3 +8,6 @@ binary classification: $$\text{ideal }f(x) = sign(P(+1|x) - \frac{1}{2}) \in \{-
 
 ## Step 1
 先用與 Linear Regression 相同的部分是, 用特徵值去計算取出一個分數
+$$
+\color{purple}{s}=\sum_{i=\color{red}{0}}^d\color{orange}{w_i}{x_i}=w^Tx
+$$
