@@ -30,3 +30,5 @@ $$h(x) = \frac{1}{1+exp(-W^\intercal x)}$$
 > 若今天拿這個 hypothesis 去解原來設定的 binary classification 問題 $$sign(P(+1|x) - \frac{1}{2}) \in \{-1, +1\}$$, 則會發現等同於在解 $$sign(w^\intercal x) \in \{-1, +1\}$$ (因為取決於 $$w^\intercal x$$ 是否大於 0)。
 
 ## Step 3
+![](model_compare.jpg)
+從上圖可以知道, Binary Classification、Linear Regression and Logistic Regression 都是透過特徵向量(權重) 與 Input 的特徵值 內積做計算, 但在這之後三者做的動作有些差異, Binary Classification 會通過一個 sign 函數將 >0 的值給予 +1, <0 的值給予 -1 (所以有一個階梯式的函數)
