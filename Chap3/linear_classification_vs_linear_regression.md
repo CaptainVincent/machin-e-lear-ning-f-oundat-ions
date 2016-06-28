@@ -12,4 +12,6 @@ $$
 &\le \color{red}{\text{regression}\ E_{in}} + \text{Penalty for Model Complexity}
 \end{aligned}
 $$
-所以我們今天只要能保證紅色的 $$\color{red}{E_{in}}$$ 夠小, 就能保證 classification 的問題 $$E_{out} \approx E_{in}$$
+所以我們今天只要能保證紅色的 $$\color{red}{E_{in}}$$ 夠小, 就能保證 classification 的問題 $$E_{out} \approx E_{in}$$, 所以我們最後這邊可以用較寬鬆的 bound 但較為好解的方法。
+
+## Advanced
