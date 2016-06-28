@@ -22,3 +22,5 @@ $$
 * s = 0, $$\theta(0) = \frac{1}{2}$$
 * s = $$\infty$$, $$\theta(\infty) = 1$$
 * s = $$-\infty$$, $$\theta(-\infty) = 0$$
+
+這是一個 smooth(平滑, 可微), monotonic(單調, 嚴格遞增), sigmoid (S形)
