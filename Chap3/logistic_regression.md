@@ -17,3 +17,6 @@ $$
 \color{blue}{\theta}(\color{purple}{s})=\frac{e^\color{purple}{s}}{1+e^\color{purple}{s}}=\frac{1}{1+e^\color{purple}{-s}}
 $$
 ![](sigmoid_function.png)
+
+這個函數有底下幾個關鍵值
+* s = 0, $$\theta(0) = \frac{1}{2}$$
