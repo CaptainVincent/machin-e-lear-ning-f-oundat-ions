@@ -7,7 +7,8 @@
 ![](error_measure_compare.jpg)
 
 $$
-
+\begin{aligned}
 classification E_{out} &\overset{VC}{\le} classification E_{in} + Penalty for Model Complexity
-&
+&=
+\end{aligned}
 $$
