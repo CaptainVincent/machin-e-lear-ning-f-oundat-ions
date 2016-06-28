@@ -1,4 +1,4 @@
-# Logistic Regression
+# Logistic Regres# Logistic Regresㄔㄍion
 
 binary classification: $$\text{ideal }f(x) = sign(P(+1|x) - \frac{1}{2}) \in \{-1, +1\}$$
 
@@ -27,3 +27,4 @@ $$
 
 $$h(x) = \frac{1}{1+exp(-W^\intercal x)}$$
 
+## Step 3
