@@ -14,5 +14,5 @@
 * [How Can Machines Learn?](Chap3/how_can_machines_learn.md)
    * [Linear Regression](Chap3/linear_regression.md)
    * [Linear Classification vs. Linear Regression](Chap3/linear_classification_vs_linear_regression.md)
-* Logistic Regression
+   * Logistic Regression
 
