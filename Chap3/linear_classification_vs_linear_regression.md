@@ -9,6 +9,6 @@
 $$
 \begin{aligned}
 \text{classification} E_{out} &\overset{VC}{\le} \text{classification}\ E_{in} + \text{Penalty for Model Complexity}\\\
-&\overset{VC}{\le} \text{regression}\ E_{in} + \text{Penalty for Model Complexity}
+&\le \text{regression}\ E_{in} + \text{Penalty for Model Complexity}
 \end{aligned}
 $$
