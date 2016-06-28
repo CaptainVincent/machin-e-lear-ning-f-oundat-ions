@@ -27,6 +27,6 @@ $$
 
 $$h(x) = \frac{1}{1+exp(-W^\intercal x)}$$
 
-> 若今天拿這個 hypothesis 去解原來設定的 binary classification 問題 $$sign(P(+1|x) - \frac{1}{2}) \in \{-1, +1\}$$, 則會發現等同於在解 $$sign(W^\intercal x) \in \{-1, +1\}$$
+> 若今天拿這個 hypothesis 去解原來設定的 binary classification 問題 $$sign(P(+1|x) - \frac{1}{2}) \in \{-1, +1\}$$, 則會發現等同於在解 $$sign(w^\intercal x) \in \{-1, +1\}$$ (因為取決於 $$w^\intercal x$$ 是否大於 0)
 
 ## Step 3
