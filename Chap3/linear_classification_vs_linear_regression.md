@@ -8,7 +8,7 @@
 左圖所示, 當今天 y = 1 時, 預測的 y 對於兩種錯誤衡量方式計算出的結果, 右圖則是當 y = -1 的 case, 所以今天不論 y 為何 $$\color{blue}{err_{0/1}} < \color{red}{err_{sqr}}$$ 皆成立, 如下式我們知道之前 VC dimension 特性帶給我們的已知
 $$
 \begin{aligned}
-\text{classification} E_{out} &\overset{VC}{\le} \text{classification}\ E_{in} + \text{Penalty for Model Complexity}\\\
-&\le \text{regression}\ E_{in} + \text{Penalty for Model Complexity}
+\color{blue}{\text{classification} E_{out}} &\overset{VC}{\le} \color{blue}{\text{classification}\ E_{in}} + \text{Penalty for Model Complexity}\\\
+&\le \color{red}{\text{regression}\ E_{in}} + \text{Penalty for Model Complexity}
 \end{aligned}
 $$
