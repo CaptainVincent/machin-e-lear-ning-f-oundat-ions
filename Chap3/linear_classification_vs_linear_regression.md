@@ -5,7 +5,7 @@
 ## Yes!
 從兩者錯誤的衡量方式來觀察 $$\color{blue}{err_{0/1} = \left[ sign(w^\intercal x) \ne y \right]}$$ , $$\color{red}{err_{sqr} = (w^\intercal x) - y)^2}$$
 ![](error_measure_compare.jpg)
-左圖所示, 當今天 y = 1 時, 預測的 y 對於兩種錯誤衡量方式計算出的結果, 右圖則是當 y = -1 的 case, 所以今天不論 y 為何 $$\color{blue}{err_{0/1}} < \color{red}{err_{sqr}}$$
+左圖所示, 當今天 y = 1 時, 預測的 y 對於兩種錯誤衡量方式計算出的結果, 右圖則是當 y = -1 的 case, 所以今天不論 y 為何 $$\color{blue}{err_{0/1}} < \color{red}{err_{sqr}}$$ 皆成立, 如下式我們知道之前 VC dimension 特性帶給我們的已知
 $$
 \begin{aligned}
 \text{classification} E_{out} &\overset{VC}{\le} \text{classification}\ E_{in} + \text{Penalty for Model Complexity}\\\
