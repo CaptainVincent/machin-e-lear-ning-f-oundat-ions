@@ -8,7 +8,7 @@
 
 $$
 \begin{aligned}
-classification E_{out} &\overset{VC}{\le} classification E_{in} + Penalty for Model Complexity
+classification E_{out} &\overset{VC}{\le} classification E_{in} + Penalty for Model Complexity\\\
 &=
 \end{aligned}
 $$
