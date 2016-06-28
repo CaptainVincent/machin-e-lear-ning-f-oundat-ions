@@ -15,4 +15,4 @@ $$
 所以我們今天只要能保證紅色的 $$\color{red}{E_{in}}$$ 夠小, 就能保證 classification 的問題 $$E_{out} \approx E_{in}$$, 所以我們最後這邊可以用較寬鬆的 bound 但較為好解的方法。
 
 ## Advanced
-大部分的時候我們使用 Linear Regression 的演算法來解 Binary Classification 都已經夠好, 但如果想要更好的話, 可以使用 $$w_{LIN}$$ 來作為 PLA/pocket 的 initial value。
+大部分的時候我們使用 Linear Regression 的演算法來解 Binary Classification 都已經夠好, 但如果想要更好的話, 可以使用 $$w_{LIN}$$ (先做到差不多好) 來作為 PLA/pocket 的 initial value, 可以加速 PLA/pocket 的速度。
