@@ -31,4 +31,4 @@ $$h(x) = \frac{1}{1+exp(-W^\intercal x)}$$
 
 ## Step 3
 ![](model_compare.jpg)
-從上圖可以知道, Binary Classification、Linear Regression and Logistic Regression 都是透過特徵向量(權重) 與 Input 的特徵值 內積做計算, 但在這之後三者做的動作有些差異如下, **Binary Classification** 會通過一個 sign 函數將 >0 的值給予 +1, <0 的值給予 -1 (所以有一個階梯式的形狀表示), **Linear Regression** 則是將計算出來的值直接輸出, **Logistic Regression** 則是透過一個 sigmoid function 將值轉換到 [0,1], 前兩種方式各自有不同的 Error Measure, 這邊將介紹第三種 err。
+從上圖可以知道, Binary Classification、Linear Regression and Logistic Regression 都是透過特徵向量(權重) 與 Input 的特徵值 內積做計算, 但在這之後三者做的動作有些差異如下, **Binary Classification** 會通過一個 sign 函數將 >0 的值給予 +1, <0 的值給予 -1 (所以有一個階梯式的形狀表示), **Linear Regression** 則是將計算出來的值直接輸出, **Logistic Regression** 則是透過一個 sigmoid function 將值轉換到 [0,1], 前兩種方式各自有不同的 Error Measure, 這邊將介紹第三種 err 如何去定義。
