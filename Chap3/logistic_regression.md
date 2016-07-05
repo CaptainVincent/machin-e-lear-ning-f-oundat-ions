@@ -41,4 +41,4 @@ $$
 \end{matrix}\right.
 $$
 
-透過以上關係式, 考慮今天訓練樣本的資料 Pattern 為 $$\mathcal{D}=\{(x_1,\color{blue}{+1}),(x_2,\color{red}{-1}),...,(x_N,\color{red}{-1})\}$$ 時 (實際上每個 pair 的第二項 output y 可能為各種排列組合, 但今天先考慮例子中的這種), 假設今天存在 f 可以產生這樣 Pattern (型態) 那出現的機率是多少呢?
+透過以上關係式, 考慮今天訓練樣本的資料 Pattern 為 $$\mathcal{D}=\{(x_1,\color{blue}{+1}),(x_2,\color{red}{-1}),...,(x_N,\color{red}{-1})\}$$ 時 (實際上每個 pair 的第二項 output y 可能為各種排列組合, 但今天先考慮例子中的這種), 假設今天存在 f 可以產生這樣 Pattern (型態), 那出現的機率是多少呢?
