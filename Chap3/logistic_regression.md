@@ -18,7 +18,7 @@ $$
 $$
 ![](sigmoid_function.png)
 
-這個函數有底下幾個關鍵值
+這個函數有底下幾個關鍵值(特性)
 * s = 0, $$\theta(0) = \frac{1}{2}$$
 * s = $$\infty$$, $$\theta(\infty) = 1$$
 * s = $$-\infty$$, $$\theta(-\infty) = 0$$
