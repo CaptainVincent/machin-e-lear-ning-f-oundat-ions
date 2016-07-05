@@ -39,4 +39,4 @@ $$
 \color{purple}{f}\color{blue}{(x)} & \color{blue}{\text{for } y=+1}\\\
 \color{red}{1-}\color{purple}{f}\color{red}{(x)} & \color{red}{\text{for }y=-1}
 \end{matrix}\right.
-$$透過以上關係式, 考慮今天訓練樣本的資料 Pattern 為 $$\mathcal{D}=\{(x_1,\color{blue}{+1}),(x_2,\color{red}{-1}),...,(x_N,\color{red}{-1})\}$$ (實際上每個 pair 的第二項 output y 可能為各種排列組合, 但今天先考慮例子中的這種), 假設今天存在
+$$透過以上關係式, 考慮今天訓練樣本的資料 Pattern 為 $$\mathcal{D}=\{(x_1,\color{blue}{+1}),(x_2,\color{red}{-1}),...,(x_N,\color{red}{-1})\}$$ (實際上每個 pair 的第二項 output y 可能為各種排列組合, 但今天先考慮例子中的這種), 假設今天存在 f 可以產生出這樣的 Pattern (型態) 那機率是多少呢?
