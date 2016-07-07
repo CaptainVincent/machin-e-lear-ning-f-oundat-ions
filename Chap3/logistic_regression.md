@@ -49,3 +49,4 @@ $$
 
 $$\text{if } \color{orange}{h}\approx\color{purple}{f}\text{, then }\; likelihood(\color{orange}{h})\approx(\text{probability using }\color{purple}{f})\approx\color{purple}{\text{large}}$$
 
+$$g=\underset{\color{orange}{h}}{argmax}\;likelihood(\color{orange}{h})$$
