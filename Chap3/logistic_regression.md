@@ -87,8 +87,8 @@ Pointwise(針對個別資料 $$x_n、y_n$$) 的 Error Measure 形式如下 (因�
 $$
 err(\color{orange}{w},x,y)=ln(1+exp(-y\color{orange}{w}^Tx))\\\
 \color{blue}{\text{cross-entropy error}}
-$$$$E_{in}$$ 的衡量式則是
+$$$$E_{in}(w)$$ 的衡量式則是
 $$
 \color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln(1+exp(-y_n\color{orange}{w}^Tx_n))
 $$
-## Step 4 (Define Error Measure)
+## Step 4 (Minimizing $$E_{in}(w)$$)
