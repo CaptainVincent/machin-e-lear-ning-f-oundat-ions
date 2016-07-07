@@ -45,5 +45,5 @@ $$
 ![](probs_and_likelihood.jpg)
 而因為 f 是我們假定存在的理想 target function, 所以用 f 產生這樣 pattern 的機率通常應該要很大 (運氣好的話), 但今天 f 是未知, 我們有的是一些 hypothesis, 所以我們試著用 h 取代 f 可以得到下圖的關係代表 h 也產生相同 pattern 的可能性。
 ![](probs_and_likelihood_2.png)
-今天 error measure 要衡量的 h 夠不夠接近我們理想的 f, 所以當今天 h 如果夠接近 f 的話, 他們產生出相同 pattern 的機率也就要更相似, 所以我們最後得到的結論 - 
+今天 error measure 要衡量的 h 夠不夠接近我們理想的 f, 所以當今天 h 如果夠接近 f 的話, 他們產生出相同 pattern 的機率也就要更相似, 所以我們最後得到的結論 - $$\text{if } \color{orange}{h}\approx\color{purple}{f}\text{, then }\; likelihood(\color{orange}{h})\approx(\text{probability using }\color{purple}{f})\approx\color{purple}{\text{large}}$$
 
