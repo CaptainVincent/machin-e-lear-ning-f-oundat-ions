@@ -53,4 +53,12 @@ $$\text{if } \color{orange}{h}\approx\color{purple}{f}\text{, then }\; likelihoo
 
 $$g=\underset{\color{orange}{h}}{argmax}\;likelihood(\color{orange}{h})$$
 
-當 h 是 logistic function $$\theta(w^Tx)$$, 其函數從圖上可知具有對稱性: 1-h(x) = h(-x)
+當 h 是 logistic function $$\theta(w^Tx)$$, 其函數從圖上可知具有對稱性: 1-h(x) = h(-x), 將對稱性的關係式帶入化簡
+$$
+\begin{aligned}
+likelihood(\color{orange}{h})&=\color{grey}{P(x_1)}\color{orange}{h}\color{blue}{(x_1)}\color{grey}{\times P(x_2)}\color{red}{(1-\color{orange}{h}(x_2))}\color{grey}{\times ...\times P(x_N)}\color{red}{(1-\color{orange}{h}(x_N))} \\\
+&= \color{grey}{P(x_1)}\color{orange}{h}\color{blue}{(x_1)}\color{grey}{\times P(x_2)}\color{red}{(\color{orange}{h}(-x_2))}\color{grey}{\times ...\times P(x_N)}\color{red}{(\color{orange}{h}(-x_N))} \\\
+&= \color{grey}{P(x_1)}\color{orange}{h}\color{blue}{(x_1)}\color{grey}{\times P(x_2)}\color{red}{(\color{orange}{h}(y_2x_2))}\color{grey}{\times ...\times P(x_N)}\color{red}{(\color{orange}{h}(y_Nx_N))}
+\end{aligned}
+$$
+
