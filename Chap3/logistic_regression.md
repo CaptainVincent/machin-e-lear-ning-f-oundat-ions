@@ -74,7 +74,7 @@ $$
 &\propto \color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln\,\theta(y_n\color{orange}{w}^Tx_n)
 \end{aligned}
 $$
-> $$\frac{1}{N}$$ 是額外加上去的, 本身只是常數的 sacling 不影響關係式, 用意在於最後可以整理成我們常見的 Error Measure 的長相。
+> $$\frac{1}{N}$$ 是額外加上去的, 本身只是常數的 sacling 不影響關係式, 用意在於最後可以整理成我們常見的 Error Measure ($$E_{in}$$) 的長相。
 
 解上式的最大值相當於求下式的最小值
 $$
