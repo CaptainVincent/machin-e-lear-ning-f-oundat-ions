@@ -53,4 +53,4 @@ $$\text{if } \color{orange}{h}\approx\color{purple}{f}\text{, then }\; likelihoo
 
 $$g=\underset{\color{orange}{h}}{argmax}\;likelihood(\color{orange}{h})$$
 
-當 h 是 logistic function $$\theta(w^Tx)$$, 
+當 h 是 logistic function $$\theta(w^Tx)$$, 其函數從圖上可知具有對稱性
