@@ -96,7 +96,7 @@ $$
 
 ![](costf_logistic.png)
 
-取最小值的方式也相同, 求 $$\triangledown E_{in}(w) = 0$$
+取最小值的方式也相同, 求 $$\triangledown E_{in}(w) = 0$$ (透過 Chain Rule)
 $$
 \triangledown E_{in}(w)=\frac{1}{N}\sum_{n=1}^{N}\color{purple}{\theta(\color{black}{-y_nw^Tx_n})}\color{orange}{(-y_nx_n)}
 $$
