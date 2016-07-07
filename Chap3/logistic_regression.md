@@ -52,4 +52,5 @@ $$\text{if } \color{orange}{h}\approx\color{purple}{f}\text{, then }\; likelihoo
 我們要如何從 Hypothesis Set 中找到適當的 g 來代表 f, 就是挑選可能性最高的
 
 $$g=\underset{\color{orange}{h}}{argmax}\;likelihood(\color{orange}{h})$$
+
 當 h 是 logistic function $$\theta(w^Tx)$$, 
