@@ -83,6 +83,7 @@ $$
 &\Rightarrow \underset{\color{orange}{w}}{min}\;\color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln(1+exp(-y_n\color{orange}{w}^Tx_n))
 \end{aligned}
 $$
+Point-wise
 $$
 err(\color{orange}{w},x,y)=ln(1+exp(-y\color{orange}{w}x))\\\
 \color{blue}{\text{cross-entropy error}}
