@@ -95,3 +95,4 @@ $$
 如同之前的 linear regression 這邊定義的 $$E_{in}$$ 也是連續(continuous)、可微(differentiable)、向下凸(convex) 函數。
 
 ![](costf_logistic.png)
+取最小值的方式也相同 
