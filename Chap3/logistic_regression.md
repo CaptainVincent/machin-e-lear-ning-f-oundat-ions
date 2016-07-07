@@ -91,3 +91,4 @@ $$$$E_{in}$$ 的衡量式則是
 $$
 \color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln(1+exp(-y_n\color{orange}{w}^Tx_n))
 $$
+## Step 3 (Define Error Measure)
