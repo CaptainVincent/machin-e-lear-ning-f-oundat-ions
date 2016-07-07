@@ -45,4 +45,5 @@ $$
 ![](probs_and_likelihood.jpg)
 而因為 f 是我們假定存在的理想 target function, 所以用 f 產生這樣 pattern 的機率應該要很大 (運氣好的話)
 ![](probs_and_likelihood_2.png)
+今天 error measure
 
