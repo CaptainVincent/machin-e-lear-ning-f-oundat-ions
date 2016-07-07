@@ -53,7 +53,8 @@ $$\text{if } \color{orange}{h}\approx\color{purple}{f}\text{, then }\; likelihoo
 
 $$g=\underset{\color{orange}{h}}{argmax}\;likelihood(\color{orange}{h})$$
 
-當 h 是 logistic function $$\theta(w^Tx)$$, 其函數從圖上可知具有對稱性: 1-h(x) = h(-x), 將對稱性的關係式帶入化簡可得到 (灰色部分對所有的 h 來說都是相同的, 故在挑選 g 時可以省略不看)
+當 h 是 logistic function $$\theta(w^Tx)$$, 其函數從圖上可知具有對稱性: 1-h(x) = h(-x), 將對稱性的關係式帶入化簡可得到
+> 灰色部分對所有的 h 來說都是相同的, 故在挑選 g 時可以省略不看, 另外以 $$y_nx_n$$ 可以表示出 output 不管今天是 sample 到 +1 或是 -1 的 case。
 
 $$
 \begin{aligned}
