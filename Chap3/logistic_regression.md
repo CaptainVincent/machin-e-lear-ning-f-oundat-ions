@@ -85,7 +85,7 @@ $$
 $$
 Pointwise(針對個別資料 $$x_n、y_n$$) 的 Error Measure 形式如下 (因歷史原因, 另稱 cross-entropy error)
 $$
-err(\color{orange}{w},x,y)=ln(1+exp(-y\color{orange}{w}x))\\\
+err(\color{orange}{w},x,y)=ln(1+exp(-y\color{orange}{w^T}x))\\\
 \color{blue}{\text{cross-entropy error}}
 $$$$E_{in}$$ 的衡量式則是
 $$
