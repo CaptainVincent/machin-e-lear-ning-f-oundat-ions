@@ -73,3 +73,10 @@ $$
 &\propto \color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln\,\theta(y_n\color{orange}{w}^Tx_n)
 \end{aligned}
 $$
+解上式的最大值相當於求下式的最小值
+$$
+\begin{aligned}
+&\;\;\;\;\underset{\color{orange}{w}}{min}\;\color{grey}{\frac{1}{N}}\sum_{n=1}^{N}-ln\,\theta(y_n\color{orange}{w}^Tx_n) \\\
+&\Rightarrow \underset{\color{orange}{w}}{min}\;\color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln(1+exp(-y_n\color{orange}{w}^Tx_n))
+\end{aligned}
+$$
