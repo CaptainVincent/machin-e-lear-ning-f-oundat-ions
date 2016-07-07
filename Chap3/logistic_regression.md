@@ -65,7 +65,8 @@ $$
 目標 g
 $$
 \underset{\color{orange}{h}}{max}\;\;\color{grey}{likelihood(logistic\;\color{orange}{h}) \propto}\prod_{n=1}^{N}\color{orange}{h}(y_nx_n)
-$$$$
+$$將 h 以 logistic function 的形式代回去
+$$
 \begin{aligned}
 \underset{\color{orange}{w}}{max}\;\;\color{grey}{likelihood(\color{orange}{w})} &\propto\prod_{n=1}^{N}\theta(y_n\color{orange}{w}^Tx_n) \\\
 &\propto ln\prod_{n=1}^{N}\theta(y_n\color{orange}{w}^Tx_n) \\\
