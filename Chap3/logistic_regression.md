@@ -92,3 +92,4 @@ $$
 \color{grey}{\frac{1}{N}}\sum_{n=1}^{N}ln(1+exp(-y_n\color{orange}{w}^Tx_n))
 $$
 ## Step 4 (Minimizing $$E_{in}(w)$$)
+如同之前的 linear regression 這邊定義的 $$E_{in}$$ 也是連續、可微、的向下凸函數
