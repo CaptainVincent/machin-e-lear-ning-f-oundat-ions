@@ -43,7 +43,7 @@ $$
 
 透過以上關係式, 考慮今天訓練樣本的資料 Pattern 為 $$\mathcal{D}=\{(x_1,\color{blue}{+1}),(x_2,\color{red}{-1}),...,(x_N,\color{red}{-1})\}$$ 時 (實際上每個 pair 的第二項 output y 可能為各種排列組合, 但今天先考慮例子中的這種), 假設今天存在 f 可以產生這樣的 Pattern (型態), 那出現的機率是多少呢? (機率如下圖 左, 經由上面關係式可由 f 取代, 如下圖 右)
 ![](probs_and_likelihood.jpg)
-而因為 f 是我們假定存在的理想 target function, 所以用 f 產生這樣 pattern 的機率應該要很大 (運氣好的話)
+而因為 f 是我們假定存在的理想 target function, 所以用 f 產生這樣 pattern 的機率應該要很大 (運氣好的話), 而今天 f 是未知, 我們有的是一些 hypothesis, 所以我們試著用 h 取代 f 可以得到下圖的關係。
 ![](probs_and_likelihood_2.png)
 今天 error measure 要衡量的
 
