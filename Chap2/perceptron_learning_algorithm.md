@@ -17,7 +17,7 @@ h(x) = sign ( Σ <sub>(i=1~d)</sub> w<sub>i</sub>x<sub>i</sub> - threshold )
 
 h(x) = sign ( Σ <sub>(i=0~d)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<sup>T</sup>**x**)
 
-> 相當於取 w 與 x 兩個 d+1 維的向量內積。
+> 相當於取 w 與 x 兩個 d+1 維, 向量內積的正負值。
 
 目標是從 **H**ypothesis Set 中挑選出最接近 f 的 g, 而這最接近的定義為在已經看過的資料中可以產出愈相同的 output , 但實際上整個 H 是一個無限大的集合, 所以 **PLA** (Perceptron Learning Algorithm) 的想法是嘗試先從中挑選出第一個 g<sub>0</sub> (或稱 **w**<sub>0</sub>), 並不斷的在錯誤中修正。
 
