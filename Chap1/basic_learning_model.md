@@ -6,7 +6,7 @@
 * **A**lgorithm, learning algorithm 為挑選假說的演算法
 * **D**ata Set, D: {(**X**<sub>1</sub>,Y<sub>1</sub>), (**X**<sub>2</sub>,Y<sub>2</sub>), ... (**X**<sub>N</sub>,Y<sub>N</sub>)}
 * **X** 為 input 的特徵向量, Y 為 Output
-* **H**ypothesis Set, 推論 input: **X** 與 output: Y 之間存在關係的假說集合
+* **H**ypothesis Set, 推論 input: **X** 與 output: Y 之間存在的關係稱作假說, 而這一連串的假說合為一個集合
 * **f** 理想上的 target function 可以完全地反應出所有的關係 (實際上 unknown), f: **X** → Y
 * **g** 透過 algorithm 從 hypothesis set 中挑選出最接近 f 者
 * **A** takes **D** and **H** to get **g** ≈ **f**, 機器學習是透過資料從假說中挑選最接近目標函式者, 用以推測訓練資料以外的其他資料結果
