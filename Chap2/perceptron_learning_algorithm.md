@@ -25,7 +25,7 @@ h(x) = sign ( Σ <sub>(i=0~d)</sub> w<sub>i</sub>x<sub>i</sub> ) = sign (**w**<s
 
 * Step1. If, sign (**w**<sup>T</sup>**x**<sub>n(t)</sub>) ≠ y<sub>n(t)</sub>
 
-> hypothesis 計算的結果於資料中的不符, y<sub>n(t)</sub> = {+1,-1}
+> hypothesis 計算的結果與資料中的不符, y<sub>n(t)</sub> = {+1,-1}
 
 * Step2. Let, **w**<sub>t+1</sub> = **w**<sub>t</sub> + y<sub>n(t)</sub> **x**<sub>n(t)</sub>
 
